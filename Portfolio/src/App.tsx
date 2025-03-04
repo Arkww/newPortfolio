@@ -2,12 +2,11 @@ import Presentation from './components/Presentation';
 import TrackPage from './pages/TrackPage';
 import ProjetPage from './pages/ProjectPage';
 import './App.css';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   const [page, setPage] = useState(0);
   const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
-  const touchStartY = useRef(0);
   const isDesktop = window.innerWidth >= 768;
   const pages = [<Presentation />, <TrackPage setPage={setPage} page={page} />, <ProjetPage setPage={setPage} page={page} />];
 
