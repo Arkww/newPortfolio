@@ -1,0 +1,189 @@
+[
+    
+        {
+          "titleProjet": "Chinese Numbers Recognition",
+          "littleTitleProjet": "Creating a deep learning model from scratch to recognize Chinese numbers using Pytorch",
+          "resultRecap": "For this project, I created a deep learning model from scratch using Pytorch to recognize Chinese numbers. I used a dataset of 15,000 images of handwritten Chinese numbers and trained my model on it. I attained an accuracy of 0.98 and displayed a confusion matrix to analyze errors.",
+          "skills": [
+            "Creating my own deep learning model",
+            "Attained an accuracy of 0.98",
+            "Displaying a confusion matrix"
+          ],
+          "technologies": ["Python", "Pytorch"],
+          "photoProjet": [
+            {
+              "src": "../src/assets/ProjectsPhotos/ChineseCharacters1.png",
+              "desc": "The final confusion matrix of my model"
+            },
+            {
+              "src": "../src/assets/ProjectsPhotos/ChineseCharacters2.png",
+              "desc": "One of the characters with the layers (Number 9)"
+            }
+          ],
+          "githubLink": "https://github.com/Arkww/ChineseNumbersRecognition"
+        }
+       ,
+    
+      {
+        "titleProjet": "Study of Chinese articles",
+        "littleTitleProjet": "Studying the word count of a database of simplified and traditional Chinese articles",
+        "resultRecap": "In this project, I counted the frequency of all the characters present in a database of more than 140,000 Chinese articles in order to study if there would be a significant difference between the 20 most used characters in traditional and simplified Chinese articles and found an explanation for the difference.",
+        "skills": [
+          "Processing a big number of Chinese characters data",
+          "Analyzing the result"
+        ],
+        "technologies": [
+          "Python",
+          "Kaggle"
+        ],
+        "photoProjet": [
+          {
+            "src": "../src/assets/ProjectsPhotos/Article1.png",
+            "desc": "Word count of characters in simplified Chinese articles"
+          },
+          {
+            "src": "../src/assets/ProjectsPhotos/Article2.png",
+            "desc": "Word count of characters in traditional Chinese articles"
+          }
+        ],
+        "githubLink": "https://github.com/Arkww/ChineseNewspaperWordCount"
+
+      }
+      ,
+      {
+        "titleProjet": "MatMap",
+        "littleTitleProjet": "Coding a website with a database to show choropleth maps",
+        "resultRecap": "In this project I coded a website attached to a database that displayed choropleth maps made from the value of the database. I then made it so the user has to guess which map is displayed by choosing between 4 options, they are 10 rounds and the goal is to score the higher possible.",
+        "skills": [
+          "Discovering how to make map in Javascript",
+          "Updating maps in real time",
+          "Filling a database with data I found on Kaggle",
+          "Coding python scripts to add/modify data to the database"
+        ],
+        "technologies": [
+          "Python",
+          "HTML/CSS",
+          "JavaScript",
+          "Pandas",
+          "Leaflet.js",
+          "Kaggle"
+        ],
+        "photoProjet": [
+          {
+            "src": "../src/assets/ProjectsPhotos/MatMap1.PNG",
+            "desc": "Display of the game playing"
+          },
+          {
+            "src": "../src/assets/ProjectsPhotos/MatMap2.PNG",
+            "desc": "Multiples maps and color are available"
+          }
+        ],
+        "githubLink": "https://github.com/Arkww/MatMap",
+        "tryMeLink": "https://arkww.github.io/MatMap/"
+      },
+
+      {
+        "titleProjet": "CIFAR10 Image recognition",
+        "littleTitleProjet": "Training a deep learning model to recognize photos of animals and vehicles",
+        "resultRecap": "For my first project in deep learning I coded an AI model using convolutional neural networks to recognize photos of animals and vehicles from the CIFAR10 dataset. The model reached an accuracy of 85% and I was able to successfully recognize my cats.",
+        "skills": [
+          "Making a model with convolutional neural networks",
+          "Trying a lot of different options to improve the accuracy of the model",
+          "Learning how to use Pytorch and Cuda"
+        ],
+        "technologies": ["Python", "Pytorch"],
+        "photoProjet": [
+          {
+            "src": "../src/assets/ProjectsPhotos/CIFAR1.png",
+
+            "desc": "The training loss of my model over 30 epochs"
+          },
+          {
+            "src": "../src/assets/ProjectsPhotos/CIFAR2.png",
+
+            "desc": "My model recognizing photos of my cats"
+          }
+        ],
+        "githubLink": "https://github.com/Arkww/CIFAR10Recognition"
+      }
+
+      ,
+      {
+        "titleProjet": "EcoGraph",
+        "littleTitleProjet": "Code an application to visualize data on maps",
+        "resultRecap": "We were a team of 5 students that were working together full-time for 2 weeks on this project. We had to create an application in Visual Studio 2022 using C#, extract data from the internet to put it in a database, and then show that data on custom maps in the application. I was the project leader of our group and had to supervise the team. I used the software MindView to manage the team.",
+        "skills": [
+          "Supervise a team of 5 people",
+          "Linking the application to the database with Python",
+          "Finding pertinent data on the internet",
+          "Creating and filling our database"
+        ],
+        "technologies": [
+          "Python",
+          "C#",
+          "SQL",
+          "GIT",
+          "MindView"
+        ],
+        "photoProjet": [
+          {
+            "src": "../src/assets/ProjectsPhotos/EcoGraph1.png",
+            "desc": "The visualization, you can pick data on the left"
+          },
+          {
+            "src": "../src/assets/ProjectsPhotos/EcoGraph2.png",
+            "desc": "The main page of the application"
+          }
+        ],
+        "githubLink": ""
+
+      }
+      ,
+      {
+        "titleProjet": "Graph project",
+        "littleTitleProjet": "Coding a java application to display graphs and apply algorithms to them",
+        "resultRecap": "In this project I succesfully implemented the prim algorithm to find the minimum spanning tree of any given graph but the highlight of the project was to code an edge bundling algorithm, for which i had to implements two shortest path algorithms, BFS and Dijkstra.",
+        "skills": [
+          "Implementing complex Graph Algorithms",
+          "Handling the display of the graphs",
+          "Manipulating graphs by programming"
+        ],
+        "technologies": [
+          "Java",
+          "GIT"
+        ],
+        "photoProjet": [
+          {
+            "src": "../src/assets/ProjectsPhotos/graph1.png",
+        "desc": "One graph in it's orginal form (american air traffic)"
+          },
+          {
+            "src": "../src/assets/ProjectsPhotos/graph2.png",
+        "desc": "The same graph after the edge bundling algorithm"
+          }
+        ],
+        "githubLink": ""
+      },
+      {
+        "titleProjet": "Odomo",
+        "littleTitleProjet": "Coding a home automation unit",
+        "resultRecap": "The project involved rewriting the code for a home automation control unit in JAVA language, with three modes: rainfall, temperature, and heating. For each of these modes, I created and used Boolean matrices to display the control unit's interface.",
+        "skills": [
+          "Manipulate matrices in Java"
+        ],
+        "technologies": [
+          "Java"
+        ],
+        "photoProjet": [
+          {
+            "src": "../src/assets/ProjectsPhotos//Odomo1.png",
+            "desc": "The interface in rainfall mode"
+          },
+          {
+            "src": "../src/assets/ProjectsPhotos//Odomo2.png",
+            "desc": "The interface in heating mode asking you to choose the heating time"
+          }
+        ],
+        "githubLink": ""
+      }
+]
