@@ -1,9 +1,9 @@
 import React from 'react';
-import France from '../assets/CountryPictures/france.png';
-import UK from '../assets/CountryPictures/UK.png';
-import China from '../assets/CountryPictures/china.png';
-import Japanese from '../assets/CountryPictures/japan.jpg';
-import Spanish from '../assets/CountryPictures/spain.png';
+import France from '../../Public/assets/CountryPictures/france.png';
+import UK from '../../Public/assets/CountryPictures/UK.png';
+import China from '../../Public/assets/CountryPictures/china.png';
+import Japanese from '../../Public/assets/CountryPictures/japan.jpg';
+import Spanish from '../../Public/assets/CountryPictures/spain.png';
 
 
 const countries = [France, UK, China, Japanese, Spanish];

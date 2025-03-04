@@ -12,11 +12,11 @@
           "technologies": ["Python", "Pytorch"],
           "photoProjet": [
             {
-              "src": "../src/assets/ProjectsPhotos/ChineseCharacters1.png",
+              "src": "assets/ProjectsPhotos/ChineseCharacters1.png",
               "desc": "The final confusion matrix of my model"
             },
             {
-              "src": "../src/assets/ProjectsPhotos/ChineseCharacters2.png",
+              "src": "assets/ProjectsPhotos/ChineseCharacters2.png",
               "desc": "One of the characters with the layers (Number 9)"
             }
           ],
@@ -38,11 +38,11 @@
         ],
         "photoProjet": [
           {
-            "src": "../src/assets/ProjectsPhotos/Article1.png",
+            "src": "assets/ProjectsPhotos/Article1.png",
             "desc": "Word count of characters in simplified Chinese articles"
           },
           {
-            "src": "../src/assets/ProjectsPhotos/Article2.png",
+            "src": "assets/ProjectsPhotos/Article2.png",
             "desc": "Word count of characters in traditional Chinese articles"
           }
         ],
@@ -70,11 +70,11 @@
         ],
         "photoProjet": [
           {
-            "src": "../src/assets/ProjectsPhotos/MatMap1.PNG",
+            "src": "assets/ProjectsPhotos/MatMap1.PNG",
             "desc": "Display of the game playing"
           },
           {
-            "src": "../src/assets/ProjectsPhotos/MatMap2.PNG",
+            "src": "assets/ProjectsPhotos/MatMap2.PNG",
             "desc": "Multiples maps and color are available"
           }
         ],
@@ -94,12 +94,12 @@
         "technologies": ["Python", "Pytorch"],
         "photoProjet": [
           {
-            "src": "../src/assets/ProjectsPhotos/CIFAR1.png",
+            "src": "assets/ProjectsPhotos/CIFAR1.png",
 
             "desc": "The training loss of my model over 30 epochs"
           },
           {
-            "src": "../src/assets/ProjectsPhotos/CIFAR2.png",
+            "src": "assets/ProjectsPhotos/CIFAR2.png",
 
             "desc": "My model recognizing photos of my cats"
           }
@@ -127,11 +127,11 @@
         ],
         "photoProjet": [
           {
-            "src": "../src/assets/ProjectsPhotos/EcoGraph1.png",
+            "src": "assets/ProjectsPhotos/EcoGraph1.png",
             "desc": "The visualization, you can pick data on the left"
           },
           {
-            "src": "../src/assets/ProjectsPhotos/EcoGraph2.png",
+            "src": "assets/ProjectsPhotos/EcoGraph2.png",
             "desc": "The main page of the application"
           }
         ],
@@ -154,11 +154,11 @@
         ],
         "photoProjet": [
           {
-            "src": "../src/assets/ProjectsPhotos/graph1.png",
+            "src": "assets/ProjectsPhotos/graph1.png",
         "desc": "One graph in it's orginal form (american air traffic)"
           },
           {
-            "src": "../src/assets/ProjectsPhotos/graph2.png",
+            "src": "assets/ProjectsPhotos/graph2.png",
         "desc": "The same graph after the edge bundling algorithm"
           }
         ],
@@ -176,11 +176,11 @@
         ],
         "photoProjet": [
           {
-            "src": "../src/assets/ProjectsPhotos//Odomo1.png",
+            "src": "assets/ProjectsPhotos//Odomo1.png",
             "desc": "The interface in rainfall mode"
           },
           {
-            "src": "../src/assets/ProjectsPhotos//Odomo2.png",
+            "src": "assets/ProjectsPhotos//Odomo2.png",
             "desc": "The interface in heating mode asking you to choose the heating time"
           }
         ],

@@ -1,9 +1,9 @@
 import React from 'react';
-import PhotoMoi2 from '../../assets/MePhotos/PhotoMoi2.jpg';
-import Linkedin from '../../assets/Logos/linkedin.png';
-import Mail from '../../assets/Logos/mail.png';
-import Github from '../../assets/Logos/github.png';
-import Instagram from '../../assets/Logos/instagram.jpg';
+import PhotoMoi2 from '../../../public/assets/MePhotos/PhotoMoi2.jpg';
+import Linkedin from '../../../public/assets/Logos/linkedin.png';
+import Mail from '../../../public/assets/Logos/mail.png';
+import Github from '../../../public/assets/Logos/github.png';
+import Instagram from '../../../public/assets/Logos/instagram.jpg';
 
 const logos = [
     { src: Linkedin, link: 'https://www.linkedin.com/in/mathieu-jay/' },

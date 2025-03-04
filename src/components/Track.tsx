@@ -1,6 +1,6 @@
 import React from 'react';
-import UniversityOfTokyo from '../assets/TrackPhotos/UniversityOfTokyo.png';
-import IUT from '../assets/TrackPhotos/IUT.png';
+import UniversityOfTokyo from '../../public/assets/TrackPhotos/UniversityOfTokyo.png';
+import IUT from '../../public/assets/TrackPhotos/IUT.png';
 
 const AcademicTrack: React.FC = () => {
     return (
