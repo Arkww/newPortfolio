@@ -6,6 +6,7 @@ interface Project {
 	littleTitleProjet: string;
 	resultRecap: string;
 	technologies: string[];
+	categorie?: string[];
 	skills: string[];
 	photoProjet: { src: string; desc: string }[];
 	githubLink: string;
@@ -23,7 +24,8 @@ const ProjectMenu: React.FC = () => {
 		setProjects(data);
 		setFilteredProjects(data);
 	}, []);
-
+	
+	
 	useEffect(() => {
 		const lowerCaseQuery = searchQuery.toLowerCase();
 		const filtered = projects.filter(
@@ -31,35 +33,70 @@ const ProjectMenu: React.FC = () => {
 		);
 		setFilteredProjects(filtered);
 	}, [searchQuery, projects]);
-
+	const filterCategories = ['All', 'Software-development', 'Data-science', 'AI'];
+	const filterProjects = (category: string) => {
+        if (category === 'All') {
+            setFilteredProjects(projects); // Show all projects
+		} else {
+			setFilteredProjects(projects.filter((project) => project.categorie?.includes(category))); // Filter by category
+		}
+		setSearchQuery(''); // Reset search query when changing category
+	};
+	
 	return (
-		<div className="flex flex-col">
-			<div className="flex flex-col md:flex-row w-full gap-8 p-6 bg-gray-50">
-				<div className="flex-1 bg-white p-6 rounded-lg shadow-2xl">
-					<h2 className="text-3xl font-bold mb-4">Projects</h2>
-					<input type="text" placeholder="Search projects..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-full p-2 border rounded mb-4" />
-					<div className="max-h-96 overflow-y-auto scrollable">
-						<ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-							{filteredProjects.map((project, index) => (
-								<li key={index}>
-									<ProjectCard
-										{...project}
-										onClick={() => {
-											setSelectedProject(project);
-											setCurrentIndex(index);
-										}}
-									/>
-								</li>
-							))}
-						</ul>
-					</div>
-				</div>
-			</div>
+        <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row w-full gap-8 p-6 bg-gray-50">
+                <div className="flex-1 bg-white p-6 rounded-lg shadow-2xl">
+                    <h2 className="text-3xl font-bold mb-4">Work</h2>
+                    <div className="flex gap-4 mb-4">
+                        {filterCategories.map((category, index) => (
+                            <button
+                                key={index}
+                                onClick={() => filterProjects(category)}
+                                className="p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                            >
+                                {category}
+                            </button>
+                        ))}
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Search projects..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="w-full p-2 border rounded mb-4"
+                    />
+                    <div className="max-h-120 overflow-y-auto scrollable">
+                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {filteredProjects
+                                .filter((project) =>
+									project.titleProjet.toLowerCase().includes(searchQuery.toLowerCase()) ||
+									project.technologies.some((tech) => tech.toLowerCase().includes(searchQuery.toLowerCase())) ||
+								project.littleTitleProjet.toLowerCase().includes(searchQuery.toLowerCase())
+
+                                )
+                                .map((project, index) => (
+                                    <li key={index}>
+                                        <ProjectCard
+                                            {...project}
+                                            onClick={() => {
+                                                setSelectedProject(project);
+                                                setCurrentIndex(index);
+                                            }}
+                                        />
+                                    </li>
+                                ))}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
 
 			{/* Project Modal */}
 			{selectedProject && (
 				<div
-					className="fixed inset-0 flex items-center justify-center z-50 bg-black/30 backdrop-blur-md p-4"
+					className="fixed inset-0 flex items-center justify-center z-50 bg-black/30 backdrop-blur-md p-4 "
 					onClick={() => {
 						setSelectedProject(null);
 						setCurrentIndex(null);
@@ -72,7 +109,8 @@ const ProjectMenu: React.FC = () => {
 							};
 						}}
 					/>
-					<div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden" onClick={(e) => e.stopPropagation()}>
+					
+					<div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden lg:mt-450" onClick={(e) => e.stopPropagation()}>
 						<h2 className="text-2xl font-bold mb-3">{selectedProject.titleProjet}</h2>
 						<p className="text-gray-700">{selectedProject.resultRecap}</p>
 
@@ -97,7 +135,7 @@ const ProjectMenu: React.FC = () => {
 									<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 										{selectedProject.photoProjet.map((photo, index) => (
 											<div key={index} className="mt-2">
-												<img src={photo.src} alt={photo.desc} className="w-full h-40 object-cover rounded" />
+												<img src={photo.src} alt={photo.desc} className="w-full h-50 object-cover rounded" />
 												<p className="text-sm text-gray-600">{photo.desc}</p>
 											</div>
 										))}

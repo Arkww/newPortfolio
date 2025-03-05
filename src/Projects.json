@@ -4,6 +4,7 @@
           "titleProjet": "Chinese Numbers Recognition",
           "littleTitleProjet": "Creating a deep learning model from scratch to recognize Chinese numbers using Pytorch",
           "resultRecap": "For this project, I created a deep learning model from scratch using Pytorch to recognize Chinese numbers. I used a dataset of 15,000 images of handwritten Chinese numbers and trained my model on it. I attained an accuracy of 0.98 and displayed a confusion matrix to analyze errors.",
+          "categorie": ["Data-science", "NLP", "AI"],
           "skills": [
             "Creating my own deep learning model",
             "Attained an accuracy of 0.98",
@@ -53,6 +54,7 @@
       {
         "titleProjet": "MatMap",
         "littleTitleProjet": "Coding a website with a database to show choropleth maps",
+        "categorie": ["Data-science", "Software-development"],
         "resultRecap": "In this project I coded a website attached to a database that displayed choropleth maps made from the value of the database. I then made it so the user has to guess which map is displayed by choosing between 4 options, they are 10 rounds and the goal is to score the higher possible.",
         "skills": [
           "Discovering how to make map in Javascript",
@@ -85,6 +87,7 @@
       {
         "titleProjet": "CIFAR10 Image recognition",
         "littleTitleProjet": "Training a deep learning model to recognize photos of animals and vehicles",
+        "categorie": ["Data-science", "AI"],
         "resultRecap": "For my first project in deep learning I coded an AI model using convolutional neural networks to recognize photos of animals and vehicles from the CIFAR10 dataset. The model reached an accuracy of 85% and I was able to successfully recognize my cats.",
         "skills": [
           "Making a model with convolutional neural networks",
@@ -111,6 +114,7 @@
       {
         "titleProjet": "EcoGraph",
         "littleTitleProjet": "Code an application to visualize data on maps",
+        "categorie": ["Data-science", "Software-development"],
         "resultRecap": "We were a team of 5 students that were working together full-time for 2 weeks on this project. We had to create an application in Visual Studio 2022 using C#, extract data from the internet to put it in a database, and then show that data on custom maps in the application. I was the project leader of our group and had to supervise the team. I used the software MindView to manage the team.",
         "skills": [
           "Supervise a team of 5 people",
@@ -141,6 +145,7 @@
       ,
       {
         "titleProjet": "Graph project",
+        "categorie": ["Software-development"],
         "littleTitleProjet": "Coding a java application to display graphs and apply algorithms to them",
         "resultRecap": "In this project I succesfully implemented the prim algorithm to find the minimum spanning tree of any given graph but the highlight of the project was to code an edge bundling algorithm, for which i had to implements two shortest path algorithms, BFS and Dijkstra.",
         "skills": [
@@ -165,7 +170,34 @@
         "githubLink": ""
       },
       {
+        "titleProjet": "RobotFight",
+        "categorie": ["Software-development"],
+        "littleTitleProjet": "Coding a webiste to organize competitions of robots playing football",
+        "resultRecap": "In this project I was a full stack developper tasked to implements various functionalities of the website using the Symfony framework, like handling time slots creations and use for the matches, implementing a land editor for the users and displaying the results of the matches, all that attached to our database and maintenaning the scrum work method.",
+        "skills": [
+          "Developping functionnalities by doing the back and front-end at the same time",
+          "Using Symfony and the doctrine ORM for the database"
+        ],
+        "technologies": [
+          "Symfony", "PHP", "MySql", "SCRUM"
+        ],
+        "photoProjet": [
+          {
+            "src": "assets/ProjectsPhotos/RobotFight1.png",
+
+            "desc": "The time slot created, they are customizable and respect a long list of constraints"
+          },
+          {
+            "src": "assets/ProjectsPhotos/RobotFight2.png",
+            "desc": "The land interface and the options of customization of the competition"
+          }
+        ],
+        "githubLink": ""
+      },
+
+      {
         "titleProjet": "Odomo",
+        "categorie": ["Software-development"],
         "littleTitleProjet": "Coding a home automation unit",
         "resultRecap": "The project involved rewriting the code for a home automation control unit in JAVA language, with three modes: rainfall, temperature, and heating. For each of these modes, I created and used Boolean matrices to display the control unit's interface.",
         "skills": [

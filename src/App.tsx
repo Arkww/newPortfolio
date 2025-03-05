@@ -8,7 +8,7 @@ function App() {
   const [page, setPage] = useState(0);
   const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
   const isDesktop = window.innerWidth >= 768;
-  const pages = [<Presentation />, <TrackPage setPage={setPage} page={page} />, <ProjetPage setPage={setPage} page={page} />];
+  const pages = [<Presentation setPage={setPage} page={page} />, <TrackPage setPage={setPage} page={page} />, <ProjetPage setPage={setPage} page={page} />];
 
   // Update viewport height
   useEffect(() => {

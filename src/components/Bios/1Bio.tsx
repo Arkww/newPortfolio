@@ -14,25 +14,25 @@ const logos = [
 
 const Bio: React.FC = () => {
     return (
-        <div className="max-w-sm mx-auto bg-white shadow-lg h-150 w-120 rounded-lg overflow-hidden">
+        <div className="max-w-sm mx-auto bg-white shadow-lg h-155 w-120 rounded-lg overflow-hidden">
             <img src={PhotoMoi1} alt="Your Name" className="w-full h-98 object-cover" />
             <div className="p-6">
                 <h2 className="text-2xl font-bold mb-2">Mathieu Jay</h2>
-                <p className="text-gray-700">
-                    Second year student in computer science at the IUT of Bordeaux, following the international track with classes in english.
-                </p>
-                <div className='flex gap-4 mt-4'>
-                    {logos.map((logo, index) => (
-                        <a key={index} href={logo.link} target="_blank" rel="noopener noreferrer">
-                            <img src={logo.src} alt="logo" className="w-8 h-6" />
-                        </a>
-                    ))}
+                <div className='flex flex-col justify-between h-full'>
+                    <p className="text-gray-700 pb-10">
+                        Second year student in computer science at the IUT of Bordeaux, following the international track with classes in French and English.
+                    </p>
+                    <div className="flex gap-4 mt-4">
+                        {logos.map((logo, index) => (
+                            <a key={index} href={logo.link} target="_blank" rel="noopener noreferrer">
+                                <img src={logo.src} alt="logo" className="w-8 h-6 object-contain transition-transform duration-200 transform hover:scale-110 hover:shadow-lg" />
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
-    
         </div>
-        );
-    };
-
+    );
+};
 
 export default Bio;

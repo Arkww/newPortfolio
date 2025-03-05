@@ -13,16 +13,16 @@ const NavBar: React.FC<navBarProps> = ({setPage, page}) => {
                 <a 
                 href="#home" 
                 onClick={() => setPage(1)}
-                className={`${page === 1 ? 'text-blue-500' : 'text-gray-300 hover:text-white'}`}
+                className={`${page === 1 ? 'text-blue-500' : 'text-gray-300 hover:text-black'}`}
                 >
                 About me
                 </a>
                 <a 
                 href="#about" 
                 onClick={() => setPage(2)}
-                className={`${page === 2 ? 'text-blue-500' : 'text-gray-300 hover:text-white'}`}
+                className={`${page === 2 ? 'text-blue-500' : 'text-gray-300 hover:text-black'}`}
                 >
-                My projects
+                My work
                 </a>
                 {/**}
                 <a 
