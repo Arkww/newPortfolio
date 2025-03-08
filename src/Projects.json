@@ -12,20 +12,17 @@
     "technologies": ["Python", "NLTK", "Hugging Face, Pandas"],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos/SentimentAnalysis1.png",
+        "src": "/assets/ProjectsPhotos/SentimentAnalysis1.png",
         "desc": "The comparaison of the results of the two models, the roberta model from hugging face is way more accurate"
       },
       {
-        "src": "public/assets/ProjectsPhotos/SentimentAnalysis2.png",
-        "desc": "The result of the vader model from NLTK, we can see that it make's a lot of mistakes"
+        "src": "/assets/ProjectsPhotos/SentimentAnalysis2.png",
+        "desc": "The result of the vader model from NLTK, a lot of mistakes are visible"
       }
     ],
     "githubLink": "https://github.com/Arkww/AmazonReviewsSentimentAnalysis"
   },
   
-
-
-
   {
     "titleProjet": "Chinese Numbers Recognition",
     "littleTitleProjet": "Creating a deep learning model from scratch to recognize Chinese numbers using Pytorch",
@@ -39,11 +36,11 @@
     "technologies": ["Python", "Pytorch"],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos/ChineseCharacters1.png",
+        "src": "/assets/ProjectsPhotos/ChineseCharacters1.png",
         "desc": "The final confusion matrix of my model"
       },
       {
-        "src": "public/assets/ProjectsPhotos/ChineseCharacters2.png",
+        "src": "/assets/ProjectsPhotos/ChineseCharacters2.png",
         "desc": "One of the characters with the layers (Number 9)"
       }
     ],
@@ -65,11 +62,11 @@
     ],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos/Article1.png",
+        "src": "/assets/ProjectsPhotos/Article1.png",
         "desc": "Word count of characters in simplified Chinese articles"
       },
       {
-        "src": "public/assets/ProjectsPhotos/Article2.png",
+        "src": "/assets/ProjectsPhotos/Article2.png",
         "desc": "Word count of characters in traditional Chinese articles"
       }
     ],
@@ -96,11 +93,11 @@
     ],
     "photoProjet": [
       {
-        "src": "Public/assets/ProjectsPhotos/MatMap1.PNG",
+        "src": "/assets/ProjectsPhotos/MatMap1.PNG",
         "desc": "Display of the game playing"
       },
       {
-        "src": "Public/assets/ProjectsPhotos/MatMap2.PNG",
+        "src": "/assets/ProjectsPhotos/MatMap2.PNG",
         "desc": "Multiples maps and color are available"
       }
     ],
@@ -122,11 +119,11 @@
     "technologies": ["Python",  "Pandas"],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos/MarketPredict1.png",
+        "src": "/assets/ProjectsPhotos/MarketPredict1.png",
         "desc": "The rolling precision of the model over the last 20 years, it is 4% better than the index"
       },
       {
-        "src": "public/assets/ProjectsPhotos/MarketPredict2.png",
+        "src": "/assets/ProjectsPhotos/MarketPredict2.png",
         "desc": "The dataframe I made for the machine learning, In addition to the high lows close etc, it also took into consideration the close ratio and the trend over 2,5,60,250 and 1000 days"
       }
     ],
@@ -145,11 +142,11 @@
     "technologies": ["Python", "Pytorch"],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos/CIFAR1.png",
+        "src": "/assets/ProjectsPhotos/CIFAR1.png",
         "desc": "The training loss of my model over 30 epochs"
       },
       {
-        "src": "public/assets/ProjectsPhotos/CIFAR2.png",
+        "src": "/assets/ProjectsPhotos/CIFAR2.png",
         "desc": "My model recognizing photos of my cats"
       }
     ],
@@ -175,11 +172,11 @@
     ],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos/EcoGraph1.png",
+        "src": "/assets/ProjectsPhotos/EcoGraph1.png",
         "desc": "The visualization, you can pick data on the left"
       },
       {
-        "src": "public/assets/ProjectsPhotos/EcoGraph2.png",
+        "src": "/assets/ProjectsPhotos/EcoGraph2.png",
         "desc": "The main page of the application"
       }
     ],
@@ -201,11 +198,11 @@
     ],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos/graph1.png",
+        "src": "/assets/ProjectsPhotos/graph1.png",
         "desc": "One graph in it's orginal form (american air traffic)"
       },
       {
-        "src": "public/assets/ProjectsPhotos/graph2.png",
+        "src": "/assets/ProjectsPhotos/graph2.png",
         "desc": "The same graph after the edge bundling algorithm"
       }
     ],
@@ -225,11 +222,11 @@
     ],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos/RobotFight1.png",
+        "src": "/assets/ProjectsPhotos/RobotFight1.png",
         "desc": "The time slot created, they are customizable and respect a long list of constraints"
       },
       {
-        "src": "public/assets/ProjectsPhotos/RobotFight2.png",
+        "src": "/assets/ProjectsPhotos/RobotFight2.png",
         "desc": "The land interface and the options of customization of the competition"
       }
     ],
@@ -248,11 +245,11 @@
     ],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos//Odomo1.png",
+        "src": "/assets/ProjectsPhotos//Odomo1.png",
         "desc": "The interface in rainfall mode"
       },
       {
-        "src": "public/assets/ProjectsPhotos//Odomo2.png",
+        "src": "/assets/ProjectsPhotos//Odomo2.png",
         "desc": "The interface in heating mode asking you to choose the heating time"
       }
     ],
