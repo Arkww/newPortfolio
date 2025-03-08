@@ -1,76 +1,102 @@
+import  { useState, useEffect, useRef } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Presentation from './components/Presentation';
 import TrackPage from './pages/TrackPage';
 import ProjetPage from './pages/ProjectPage';
 import './App.css';
-import { useState, useEffect } from 'react';
 
 function App() {
-  const [page, setPage] = useState(0);
-  const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
-  const isDesktop = window.innerWidth >= 768;
-  const pages = [<Presentation setPage={setPage} page={page} />, <TrackPage setPage={setPage} page={page} />, <ProjetPage setPage={setPage} page={page} />];
+  const [showNav, setShowNav] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
 
-  // Update viewport height
+  // Refs for each section
+  const trackRef = useRef<HTMLDivElement>(null);
+  const projectRef = useRef<HTMLDivElement>(null);
+  const presentationRef = useRef<HTMLDivElement>(null); // Reference for the presentation page
+  
+
+ const handleScroll = () => {
+  const currentScrollPos = window.pageYOffset;
+  
+  // Show nav when at the top of the page regardless of scroll direction
+  if (currentScrollPos < 100) {
+    setShowNav(true);
+  } else if (prevScrollPos > currentScrollPos) {
+    // Scrolling up
+    setShowNav(true);
+  } else {
+    // Scrolling down
+    setShowNav(false);
+  }
+  
+  setPrevScrollPos(currentScrollPos);
+};
+
   useEffect(() => {
-    const updateViewportHeight = () => setViewportHeight(window.innerHeight);
-    window.addEventListener('resize', updateViewportHeight);
-    return () => window.removeEventListener('resize', updateViewportHeight);
-  }, []);
+    // Add event listener for scroll
+    window.addEventListener('scroll', handleScroll);
 
-  // Lock scrolling on desktop, allow normal scroll on mobile
-  useEffect(() => {
-    if (isDesktop) {
-      document.body.style.overflow = 'hidden'; // Prevent normal scrolling
-    } else {
-      document.body.style.overflow = 'auto'; // Allow mobile scrolling
-    }
-    return () => { document.body.style.overflow = 'auto'; };
-  }, [isDesktop]);
-
-  // Desktop Scroll Handling (Page Switching)
-  useEffect(() => {
-    if (!isDesktop) return; // Skip if mobile
-
-    const handleScroll = (event: WheelEvent) => {
-      const target = event.target as HTMLElement;
-      const scrollableParent = target.closest('.scrollable');
-
-      // Allow scrolling inside scrollable elements
-      if (scrollableParent) {
-        const atTop = scrollableParent.scrollTop === 0;
-        const atBottom = Math.ceil(scrollableParent.scrollTop + scrollableParent.clientHeight) >= scrollableParent.scrollHeight;
-        if ((event.deltaY < 0 && !atTop) || (event.deltaY > 0 && !atBottom)) return;
-      }
-
-      event.preventDefault(); // Prevent normal scrolling
-
-      if (event.deltaY > 0 && page < pages.length - 1) {
-        setPage((prev) => prev + 1);
-      } else if (event.deltaY < 0 && page > 0) {
-        setPage((prev) => prev - 1);
-      }
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
-
-    window.addEventListener('wheel', handleScroll, { passive: false });
-    return () => window.removeEventListener('wheel', handleScroll);
-  }, [page, isDesktop]);
+  }, [prevScrollPos]);
 
   return (
-    <div 
-      className={`w-full ${isDesktop ? 'md:overflow-hidden' : 'overflow-auto'} flex flex-col md:block`}
-      style={{ height: isDesktop ? `${viewportHeight}px` : 'auto' }}
+    <Router>
+      <div className="flex flex-col">
+        {/* Navigation Links */}
+        <nav
+  className={`fixed top-0 left-0 right-0 p-4 bg-white z-50 transition-transform duration-300 ease-in-out ${
+    showNav ? 'transform translate-y-0' : 'transform -translate-y-full'
+  }`}
+>
+  <div className="flex gap-8">
+    <button 
+      onClick={() => {
+        console.log("Track button clicked");
+        if (trackRef.current) {
+          console.log("Track ref exists");
+          trackRef.current.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.log("Track ref is null");
+        }
+      }} 
+      className="text-lg font-semibold bg-blue-100 px-3 py-1 rounded hover:bg-blue-200"
     >
-      <div
-        className="transition-transform duration-500 ease-in-out"
-        style={isDesktop ? { transform: `translateY(-${page * viewportHeight}px)` } : {}}
-      >
-        {pages.map((content, index) => (
-          <div key={index} className="flex items-center justify-center md:h-full h-auto">
-            {content}
-          </div>
-        ))}
+      Track Page
+    </button>
+    <button 
+      onClick={() => {
+        console.log("Project button clicked");
+        if (projectRef.current) {
+          console.log("Project ref exists");
+          projectRef.current.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.log("Project ref is null");
+        }
+      }} 
+      className="text-lg font-semibold bg-blue-100 px-3 py-1 rounded hover:bg-blue-200"
+    >
+      Project Page
+    </button>
+  </div>
+</nav>
+
+
+
+        {/* The actual sections that you scroll between */}
+        <div ref={presentationRef} className="min-h-screen">
+          <Presentation />
+        </div>
+        <div ref={trackRef} className="min-h-screen">
+          <TrackPage />
+        </div>
+        <div ref={projectRef} className="min-h-screen">
+          <ProjetPage />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

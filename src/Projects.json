@@ -1,221 +1,261 @@
 [
-    
-        {
-          "titleProjet": "Chinese Numbers Recognition",
-          "littleTitleProjet": "Creating a deep learning model from scratch to recognize Chinese numbers using Pytorch",
-          "resultRecap": "For this project, I created a deep learning model from scratch using Pytorch to recognize Chinese numbers. I used a dataset of 15,000 images of handwritten Chinese numbers and trained my model on it. I attained an accuracy of 0.98 and displayed a confusion matrix to analyze errors.",
-          "categorie": ["Data-science", "NLP", "AI"],
-          "skills": [
-            "Creating my own deep learning model",
-            "Attained an accuracy of 0.98",
-            "Displaying a confusion matrix"
-          ],
-          "technologies": ["Python", "Pytorch"],
-          "photoProjet": [
-            {
-              "src": "assets/ProjectsPhotos/ChineseCharacters1.png",
-              "desc": "The final confusion matrix of my model"
-            },
-            {
-              "src": "assets/ProjectsPhotos/ChineseCharacters2.png",
-              "desc": "One of the characters with the layers (Number 9)"
-            }
-          ],
-          "githubLink": "https://github.com/Arkww/ChineseNumbersRecognition"
-        }
-       ,
-    
+  {
+    "titleProjet": "Sentiment analysis of Amazon reviews",
+    "littleTitleProjet": "Using NLTK and a model from Hugging face to conduct sentiment analysis on a dataset of 50 0000 Amazon reviews and compared the two ways of doing it",
+    "resultRecap": "For this project after cleaning and preparing the data I first implemented a basic sentiment analysis model from the NTLK library. I saw that it wasn't really efficient so I went on hugging face and found a model that looked fitting, I implemented it and it the result were way more satisfying.",
+    "categorie": ["Data-science", "NLP"],
+    "skills": [
+      "Analysing the sentiment of reviews in a dataset of 50 000 reviews",
+      "Compared the results of two different models",
+      "Went to look at the Positive 1-Star and Negative 5-Star Reviews to see why did the model failed sometimes"
+    ],
+    "technologies": ["Python", "NLTK", "Hugging Face, Pandas"],
+    "photoProjet": [
       {
-        "titleProjet": "Study of Chinese articles",
-        "littleTitleProjet": "Studying the word count of a database of simplified and traditional Chinese articles",
-        "resultRecap": "In this project, I counted the frequency of all the characters present in a database of more than 140,000 Chinese articles in order to study if there would be a significant difference between the 20 most used characters in traditional and simplified Chinese articles and found an explanation for the difference.",
-        "skills": [
-          "Processing a big number of Chinese characters data",
-          "Analyzing the result"
-        ],
-        "technologies": [
-          "Python",
-          "Kaggle"
-        ],
-        "photoProjet": [
-          {
-            "src": "assets/ProjectsPhotos/Article1.png",
-            "desc": "Word count of characters in simplified Chinese articles"
-          },
-          {
-            "src": "assets/ProjectsPhotos/Article2.png",
-            "desc": "Word count of characters in traditional Chinese articles"
-          }
-        ],
-        "githubLink": "https://github.com/Arkww/ChineseNewspaperWordCount"
-
-      }
-      ,
-      {
-        "titleProjet": "MatMap",
-        "littleTitleProjet": "Coding a website with a database to show choropleth maps",
-        "categorie": ["Data-science", "Software-development"],
-        "resultRecap": "In this project I coded a website attached to a database that displayed choropleth maps made from the value of the database. I then made it so the user has to guess which map is displayed by choosing between 4 options, they are 10 rounds and the goal is to score the higher possible.",
-        "skills": [
-          "Discovering how to make map in Javascript",
-          "Updating maps in real time",
-          "Filling a database with data I found on Kaggle",
-          "Coding python scripts to add/modify data to the database"
-        ],
-        "technologies": [
-          "Python",
-          "HTML/CSS",
-          "JavaScript",
-          "Pandas",
-          "Leaflet.js",
-          "Kaggle"
-        ],
-        "photoProjet": [
-          {
-            "src": "assets/ProjectsPhotos/MatMap1.PNG",
-            "desc": "Display of the game playing"
-          },
-          {
-            "src": "assets/ProjectsPhotos/MatMap2.PNG",
-            "desc": "Multiples maps and color are available"
-          }
-        ],
-        "githubLink": "https://github.com/Arkww/MatMap",
-        "tryMeLink": "https://arkww.github.io/MatMap/"
+        "src": "public/assets/ProjectsPhotos/SentimentAnalysis1.png",
+        "desc": "The comparaison of the results of the two models, the roberta model from hugging face is way more accurate"
       },
-
       {
-        "titleProjet": "CIFAR10 Image recognition",
-        "littleTitleProjet": "Training a deep learning model to recognize photos of animals and vehicles",
-        "categorie": ["Data-science", "AI"],
-        "resultRecap": "For my first project in deep learning I coded an AI model using convolutional neural networks to recognize photos of animals and vehicles from the CIFAR10 dataset. The model reached an accuracy of 85% and I was able to successfully recognize my cats.",
-        "skills": [
-          "Making a model with convolutional neural networks",
-          "Trying a lot of different options to improve the accuracy of the model",
-          "Learning how to use Pytorch and Cuda"
-        ],
-        "technologies": ["Python", "Pytorch"],
-        "photoProjet": [
-          {
-            "src": "assets/ProjectsPhotos/CIFAR1.png",
-
-            "desc": "The training loss of my model over 30 epochs"
-          },
-          {
-            "src": "assets/ProjectsPhotos/CIFAR2.png",
-
-            "desc": "My model recognizing photos of my cats"
-          }
-        ],
-        "githubLink": "https://github.com/Arkww/CIFAR10Recognition"
+        "src": "public/assets/ProjectsPhotos/SentimentAnalysis2.png",
+        "desc": "The result of the vader model from NLTK, we can see that it make's a lot of mistakes"
       }
+    ],
+    "githubLink": "https://github.com/Arkww/AmazonReviewsSentimentAnalysis"
+  },
+  
 
-      ,
+
+
+  {
+    "titleProjet": "Chinese Numbers Recognition",
+    "littleTitleProjet": "Creating a deep learning model from scratch to recognize Chinese numbers using Pytorch",
+    "resultRecap": "For this project, I created a deep learning model from scratch using Pytorch to recognize Chinese numbers. I used a dataset of 15,000 images of handwritten Chinese numbers and trained my model on it. I attained an accuracy of 0.98 and displayed a confusion matrix to analyze errors.",
+    "categorie": ["Data-science", "NLP", "Machine-learning"],
+    "skills": [
+      "Creating my own deep learning model",
+      "Attained an accuracy of 0.98",
+      "Displaying a confusion matrix"
+    ],
+    "technologies": ["Python", "Pytorch"],
+    "photoProjet": [
       {
-        "titleProjet": "EcoGraph",
-        "littleTitleProjet": "Code an application to visualize data on maps",
-        "categorie": ["Data-science", "Software-development"],
-        "resultRecap": "We were a team of 5 students that were working together full-time for 2 weeks on this project. We had to create an application in Visual Studio 2022 using C#, extract data from the internet to put it in a database, and then show that data on custom maps in the application. I was the project leader of our group and had to supervise the team. I used the software MindView to manage the team.",
-        "skills": [
-          "Supervise a team of 5 people",
-          "Linking the application to the database with Python",
-          "Finding pertinent data on the internet",
-          "Creating and filling our database"
-        ],
-        "technologies": [
-          "Python",
-          "C#",
-          "SQL",
-          "GIT",
-          "MindView"
-        ],
-        "photoProjet": [
-          {
-            "src": "assets/ProjectsPhotos/EcoGraph1.png",
-            "desc": "The visualization, you can pick data on the left"
-          },
-          {
-            "src": "assets/ProjectsPhotos/EcoGraph2.png",
-            "desc": "The main page of the application"
-          }
-        ],
-        "githubLink": ""
-
+        "src": "public/assets/ProjectsPhotos/ChineseCharacters1.png",
+        "desc": "The final confusion matrix of my model"
+      },
+      {
+        "src": "public/assets/ProjectsPhotos/ChineseCharacters2.png",
+        "desc": "One of the characters with the layers (Number 9)"
       }
-      ,
+    ],
+    "githubLink": "https://github.com/Arkww/ChineseNumbersRecognition"
+  },
+  {
+    "titleProjet": "Study of Chinese articles",
+    "littleTitleProjet": "Studying the word count of a database of simplified and traditional Chinese articles",
+    "categorie": ["Data-science", "NLP"],
+    "resultRecap": "In this project, I counted the frequency of all the characters present in a database of more than 140,000 Chinese articles in order to study if there would be a significant difference between the 20 most used characters in traditional and simplified Chinese articles and found an explanation for the difference.",
+    "skills": [
+      "Processing a big number of Chinese characters data",
+      "Analyzing the result"
+    ],
+    "technologies": [
+      "Python",
+      "Kaggle",
+      "Pandas"
+    ],
+    "photoProjet": [
       {
-        "titleProjet": "Graph project",
-        "categorie": ["Software-development"],
-        "littleTitleProjet": "Coding a java application to display graphs and apply algorithms to them",
-        "resultRecap": "In this project I succesfully implemented the prim algorithm to find the minimum spanning tree of any given graph but the highlight of the project was to code an edge bundling algorithm, for which i had to implements two shortest path algorithms, BFS and Dijkstra.",
-        "skills": [
-          "Implementing complex Graph Algorithms",
-          "Handling the display of the graphs",
-          "Manipulating graphs by programming"
-        ],
-        "technologies": [
-          "Java",
-          "GIT"
-        ],
-        "photoProjet": [
-          {
-            "src": "assets/ProjectsPhotos/graph1.png",
+        "src": "public/assets/ProjectsPhotos/Article1.png",
+        "desc": "Word count of characters in simplified Chinese articles"
+      },
+      {
+        "src": "public/assets/ProjectsPhotos/Article2.png",
+        "desc": "Word count of characters in traditional Chinese articles"
+      }
+    ],
+    "githubLink": "https://github.com/Arkww/ChineseNewspaperWordCount"
+  },
+  {
+    "titleProjet": "MatMap",
+    "littleTitleProjet": "Coding a website with a database to show choropleth maps",
+    "categorie": ["Data-science", "Software-development"],
+    "resultRecap": "In this project I coded a website attached to a database that displayed choropleth maps made from the value of the database. I then made it so the user has to guess which map is displayed by choosing between 4 options, they are 10 rounds and the goal is to score the higher possible.",
+    "skills": [
+      "Discovering how to make map in Javascript",
+      "Updating maps in real time",
+      "Filling a database with data I found on Kaggle",
+      "Coding python scripts to add/modify data to the database"
+    ],
+    "technologies": [
+      "Python",
+      "HTML/CSS",
+      "JavaScript",
+      "Pandas",
+      "Leaflet.js",
+      "Kaggle"
+    ],
+    "photoProjet": [
+      {
+        "src": "public/assets/ProjectsPhotos/MatMap1.PNG",
+        "desc": "Display of the game playing"
+      },
+      {
+        "src": "public/assets/ProjectsPhotos/MatMap2.PNG",
+        "desc": "Multiples maps and color are available"
+      }
+    ],
+    "githubLink": "https://github.com/Arkww/MatMap",
+    "tryMeLink": "https://arkww.github.io/MatMap/"
+  },
+
+  {
+    "titleProjet": "Stock market SP500 prediction",
+    "littleTitleProjet": "Using a model from SKlearn to predict the stock market of the SP500 with the day data from the last 35 years using machine learning techniques like backtesting", 
+    "resultRecap": "For this project fun project that I did to discover the world of financial data with machine learning, I used the data of the SP500 from the last 35 years to train a model from the SKlearn library to predict the stock market of the SP500. I managed to beat the index by 4% precision. It was just to have fun soI don't intend to use it in real life as it is not really reliable.",
+    "categorie": ["Data-science", "Machine-learning"],
+    "skills": [
+      "Analyzing data over a large period of time (35 years)",
+      "Implementing a machine learning model from SKlearn and improving it", 
+      "Add backtesting on my model",
+      "Add new columns to the model like the trend and close ratio to improve the model accuracy"
+    ],
+    "technologies": ["Python",  "Pandas"],
+    "photoProjet": [
+      {
+        "src": "public/assets/ProjectsPhotos/MarketPredict1.png",
+        "desc": "The rolling precision of the model over the last 20 years, it is 4% better than the index"
+      },
+      {
+        "src": "public/assets/ProjectsPhotos/MarketPredict2.png",
+        "desc": "The dataframe I made for the machine learning, In addition to the high lows close etc, it also took into consideration the close ratio and the trend over 2,5,60,250 and 1000 days"
+      }
+    ],
+    "githubLink": "https://github.com/Arkww/marketPredict"
+  },
+  {
+    "titleProjet": "CIFAR10 Image recognition",
+    "littleTitleProjet": "Training a deep learning model to recognize photos of animals and vehicles",
+    "categorie": ["Data-science", "Machine-learning"],
+    "resultRecap": "For my first project in deep learning I coded an AI model using convolutional neural networks to recognize photos of animals and vehicles from the CIFAR10 dataset. The model reached an accuracy of 85% and I was able to successfully recognize my cats.",
+    "skills": [
+      "Making a model with convolutional neural networks",
+      "Trying a lot of different options to improve the accuracy of the model",
+      "Learning how to use Pytorch and Cuda"
+    ],
+    "technologies": ["Python", "Pytorch"],
+    "photoProjet": [
+      {
+        "src": "public/assets/ProjectsPhotos/CIFAR1.png",
+        "desc": "The training loss of my model over 30 epochs"
+      },
+      {
+        "src": "public/assets/ProjectsPhotos/CIFAR2.png",
+        "desc": "My model recognizing photos of my cats"
+      }
+    ],
+    "githubLink": "https://github.com/Arkww/CIFAR10Recognition"
+  },
+  {
+    "titleProjet": "EcoGraph",
+    "littleTitleProjet": "Code an application to visualize data on maps",
+    "categorie": ["Data-science", "Software-development"],
+    "resultRecap": "We were a team of 5 students that were working together full-time for 2 weeks on this project. We had to create an application in Visual Studio 2022 using C#, extract data from the internet to put it in a database, and then show that data on custom maps in the application. I was the project leader of our group and had to supervise the team. I used the software MindView to manage the team.",
+    "skills": [
+      "Supervise a team of 5 people",
+      "Linking the application to the database with Python",
+      "Finding pertinent data on the internet",
+      "Creating and filling our database"
+    ],
+    "technologies": [
+      "Python",
+      "C#",
+      "SQL",
+      "GIT",
+      "MindView"
+    ],
+    "photoProjet": [
+      {
+        "src": "public/assets/ProjectsPhotos/EcoGraph1.png",
+        "desc": "The visualization, you can pick data on the left"
+      },
+      {
+        "src": "public/assets/ProjectsPhotos/EcoGraph2.png",
+        "desc": "The main page of the application"
+      }
+    ],
+    "githubLink": ""
+  },
+  {
+    "titleProjet": "Graph project",
+    "categorie": ["Software-development"],
+    "littleTitleProjet": "Coding a java application to display graphs and apply algorithms to them",
+    "resultRecap": "In this project I succesfully implemented the prim algorithm to find the minimum spanning tree of any given graph but the highlight of the project was to code an edge bundling algorithm, for which i had to implements two shortest path algorithms, BFS and Dijkstra.",
+    "skills": [
+      "Implementing complex Graph Algorithms",
+      "Handling the display of the graphs",
+      "Manipulating graphs by programming"
+    ],
+    "technologies": [
+      "Java",
+      "GIT"
+    ],
+    "photoProjet": [
+      {
+        "src": "public/assets/ProjectsPhotos/graph1.png",
         "desc": "One graph in it's orginal form (american air traffic)"
-          },
-          {
-            "src": "assets/ProjectsPhotos/graph2.png",
+      },
+      {
+        "src": "public/assets/ProjectsPhotos/graph2.png",
         "desc": "The same graph after the edge bundling algorithm"
-          }
-        ],
-        "githubLink": ""
-      },
-      {
-        "titleProjet": "RobotFight",
-        "categorie": ["Software-development"],
-        "littleTitleProjet": "Coding a webiste to organize competitions of robots playing football",
-        "resultRecap": "In this project I was a full stack developper tasked to implements various functionalities of the website using the Symfony framework, like handling time slots creations and use for the matches, implementing a land editor for the users and displaying the results of the matches, all that attached to our database and maintenaning the scrum work method.",
-        "skills": [
-          "Developping functionnalities by doing the back and front-end at the same time",
-          "Using Symfony and the doctrine ORM for the database"
-        ],
-        "technologies": [
-          "Symfony", "PHP", "MySql", "SCRUM"
-        ],
-        "photoProjet": [
-          {
-            "src": "assets/ProjectsPhotos/RobotFight1.png",
-
-            "desc": "The time slot created, they are customizable and respect a long list of constraints"
-          },
-          {
-            "src": "assets/ProjectsPhotos/RobotFight2.png",
-            "desc": "The land interface and the options of customization of the competition"
-          }
-        ],
-        "githubLink": ""
-      },
-
-      {
-        "titleProjet": "Odomo",
-        "categorie": ["Software-development"],
-        "littleTitleProjet": "Coding a home automation unit",
-        "resultRecap": "The project involved rewriting the code for a home automation control unit in JAVA language, with three modes: rainfall, temperature, and heating. For each of these modes, I created and used Boolean matrices to display the control unit's interface.",
-        "skills": [
-          "Manipulate matrices in Java"
-        ],
-        "technologies": [
-          "Java"
-        ],
-        "photoProjet": [
-          {
-            "src": "assets/ProjectsPhotos//Odomo1.png",
-            "desc": "The interface in rainfall mode"
-          },
-          {
-            "src": "assets/ProjectsPhotos//Odomo2.png",
-            "desc": "The interface in heating mode asking you to choose the heating time"
-          }
-        ],
-        "githubLink": ""
       }
+    ],
+    "githubLink": ""
+  },
+  {
+    "titleProjet": "RobotFight",
+    "categorie": ["Software-development"],
+    "littleTitleProjet": "Coding a webiste to organize competitions of robots playing football",
+    "resultRecap": "In this project I was a full stack developper tasked to implements various functionalities of the website using the Symfony framework, like handling time slots creations and use for the matches, implementing a land editor for the users and displaying the results of the matches, all that attached to our database and maintenaning the scrum work method.",
+    "skills": [
+      "Developping functionnalities by doing the back and front-end at the same time",
+      "Using Symfony and the doctrine ORM for the database"
+    ],
+    "technologies": [
+      "Symfony", "PHP", "MySql", "SCRUM"
+    ],
+    "photoProjet": [
+      {
+        "src": "public/assets/ProjectsPhotos/RobotFight1.png",
+        "desc": "The time slot created, they are customizable and respect a long list of constraints"
+      },
+      {
+        "src": "public/assets/ProjectsPhotos/RobotFight2.png",
+        "desc": "The land interface and the options of customization of the competition"
+      }
+    ],
+    "githubLink": ""
+  },
+  {
+    "titleProjet": "Odomo",
+    "categorie": ["Software-development"],
+    "littleTitleProjet": "Coding a home automation unit",
+    "resultRecap": "The project involved rewriting the code for a home automation control unit in JAVA language, with three modes: rainfall, temperature, and heating. For each of these modes, I created and used Boolean matrices to display the control unit's interface.",
+    "skills": [
+      "Manipulate matrices in Java"
+    ],
+    "technologies": [
+      "Java"
+    ],
+    "photoProjet": [
+      {
+        "src": "public/assets/ProjectsPhotos//Odomo1.png",
+        "desc": "The interface in rainfall mode"
+      },
+      {
+        "src": "public/assets/ProjectsPhotos//Odomo2.png",
+        "desc": "The interface in heating mode asking you to choose the heating time"
+      }
+    ],
+    "githubLink": ""
+  }
 ]

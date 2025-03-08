@@ -1,9 +1,9 @@
 import React from 'react';
-import PhotoMoi1 from '../../../Public/assets/MePhotos/PhotoMoi1.jpg';
-import Linkedin from '../../../Public/assets/Logos/linkedin.png';
-import Mail from '../../../Public/assets/Logos/mail.png';
-import Github from '../../../Public/assets/Logos/github.png';
-import Instagram from '../../../Public/assets/Logos/instagram.jpg';
+import PhotoMoi1 from '../../../public/assets/MePhotos/PhotoMoi1.jpg';
+import Linkedin from '../../../public/assets/Logos/linkedin.png';
+import Mail from '../../../public/assets/Logos/mail.png';
+import Github from '../../../public/assets/Logos/github.png';
+import Instagram from '../../../public/assets/Logos/instagram.jpg';
 
 const logos = [
     { src: Linkedin, link: 'https://www.linkedin.com/in/mathieu-jay/' },
@@ -19,7 +19,7 @@ const Bio: React.FC = () => {
             <div className="p-6">
                 <h2 className="text-2xl font-bold mb-2">Mathieu Jay</h2>
                 <div className='flex flex-col justify-between h-full'>
-                    <p className="text-gray-700 pb-10">
+                    <p className="text-gray-700 mb-4">
                         Second year student in computer science at the IUT of Bordeaux, following the international track with classes in French and English.
                     </p>
                     <div className="flex gap-4 mt-4">
