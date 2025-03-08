@@ -96,11 +96,11 @@
     ],
     "photoProjet": [
       {
-        "src": "public/assets/ProjectsPhotos/MatMap1.PNG",
+        "src": "Public/assets/ProjectsPhotos/MatMap1.PNG",
         "desc": "Display of the game playing"
       },
       {
-        "src": "public/assets/ProjectsPhotos/MatMap2.PNG",
+        "src": "Public/assets/ProjectsPhotos/MatMap2.PNG",
         "desc": "Multiples maps and color are available"
       }
     ],
