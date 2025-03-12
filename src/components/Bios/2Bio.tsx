@@ -28,7 +28,7 @@ const Bio: React.FC = () => {
                                 <img src={logo.src} alt="logo" className="w-8 h-6 object-contain transition-transform duration-200 transform hover:scale-110 hover:shadow-lg" />
                             </a>
                         ))}
-                         <a href="../../../public/assets/CVEN.pdf" download className="flex flex-center">
+                         <a href="/newPortfolio/assets/CVEN.pdf" download className="flex flex-center">
                         
                         <button
                             className="flex items-center justify-center cursor-pointer bg-gradient-to-tr from-grey to-white border-2 border-black rounded-full transition duration-300 ease-in-out px-5 py-2.5 font-bold text-black hover:from-white hover:to-black hover:text-white"
