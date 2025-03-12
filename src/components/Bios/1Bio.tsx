@@ -22,12 +22,38 @@ const Bio: React.FC = () => {
                     <p className="text-gray-700 mb-4">
                         Second year student in computer science at the IUT of Bordeaux, following the international track with classes in French and English.
                     </p>
-                    <div className="flex gap-4 mt-4">
+                    <div className="flex gap-4 mt-4 text-center items-center">
                         {logos.map((logo, index) => (
                             <a key={index} href={logo.link} target="_blank" rel="noopener noreferrer">
                                 <img src={logo.src} alt="logo" className="w-8 h-6 object-contain transition-transform duration-200 transform hover:scale-110 hover:shadow-lg" />
                             </a>
                         ))}
+                        <a href="../../../public/assets/CVEN.pdf" download className="flex flex-center">
+                        
+                            <button
+                                className="flex items-center justify-center cursor-pointer bg-gradient-to-tr from-grey to-white border-2 border-black rounded-full transition duration-300 ease-in-out px-5 py-2.5 font-bold text-black hover:from-white hover:to-black hover:text-white"
+                                style={{ filter: 'grayscale(100%)' }}
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="16px"
+                                    width="16px"
+                                    className="mr-1"
+                                >
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        fill="currentColor"
+                                        d="M19.35 10.04C18.67 6.59 15.64 4 12 4 
+                                            9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14 
+                                            c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 
+                                            0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7 
+                                            l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z"
+                                    />
+                                </svg>
+                                Resume
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

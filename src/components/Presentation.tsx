@@ -30,7 +30,7 @@ const Presentation: React.FC = () => {
                     <img key={index} src={country} alt="country" className="w-12 h-10 object-cover" />
                 ))}
             </div>
-            <p className="text-lg mt-10">I am currently looking for a one year apprenticeship starting in September and located in France.</p>
+            <p className="text-lg mt-10">I am currently looking for a one year apprenticeship starting in September 2025 and located in France.</p>
 
             {/* Arrow button with smooth scroll functionality */}
             <div className="absolute bottom-4 inset-x-0 flex justify-center">

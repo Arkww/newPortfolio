@@ -18,7 +18,7 @@ function App() {
  const handleScroll = () => {
   const currentScrollPos = window.pageYOffset;
   
-  // Show nav when at the top of the page regardless of scroll direction
+  // Show nav when at the top of the page regardless of scroll direction²
   if (currentScrollPos < 100) {
     setShowNav(true);
   } else if (prevScrollPos > currentScrollPos) {
@@ -64,7 +64,7 @@ function App() {
       }} 
       className="text-lg font-semibold bg-blue-100 px-3 py-1 rounded hover:bg-blue-200"
     >
-      Track Page
+      Academic track
     </button>
     <button 
       onClick={() => {
@@ -78,7 +78,7 @@ function App() {
       }} 
       className="text-lg font-semibold bg-blue-100 px-3 py-1 rounded hover:bg-blue-200"
     >
-      Project Page
+      My work
     </button>
   </div>
 </nav>
