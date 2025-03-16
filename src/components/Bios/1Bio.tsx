@@ -4,7 +4,7 @@ import Linkedin from '../../../public/assets/Logos/linkedin.png';
 import Mail from '../../../public/assets/Logos/mail.png';
 import Github from '../../../public/assets/Logos/github.png';
 import Instagram from '../../../public/assets/Logos/instagram.jpg';
-// import CV from '../Bios/CVEN.pdf';
+// import CV from '../../../public/assets/CVEN.pdf';
 
 const logos = [
     { src: Linkedin, link: 'https://www.linkedin.com/in/mathieu-jay/' },
@@ -15,7 +15,7 @@ const logos = [
 
 const Bio: React.FC = () => {
     return (
-        <div className="max-w-sm mx-auto bg-white shadow-lg h-155 w-120 rounded-lg overflow-hidden">
+        <div className="max-w- mx-auto bg-white shadow-lg h-155 w-120 rounded-lg overflow-hidden">
             <img src={PhotoMoi1} alt="Your Name" className="w-full h-98 object-cover" />
             <div className="p-6">
                 <h2 className="text-2xl font-bold mb-2">Mathieu Jay</h2>
@@ -29,8 +29,8 @@ const Bio: React.FC = () => {
                                 <img src={logo.src} alt="logo" className="w-8 h-6 object-contain transition-transform duration-200 transform hover:scale-110 hover:shadow-lg" />
                             </a>
                         ))}
-                       {/* <a href={CV} download className="flex flex-center"> 
-                        
+                        <a  href="/assets/CVEN.pdf" download className="flex flex-center">
+
                             <button
                                 className="flex items-center justify-center cursor-pointer bg-gradient-to-tr from-grey to-white border-2 border-black rounded-full transition duration-300 ease-in-out px-5 py-2.5 font-bold text-black hover:from-white hover:to-black hover:text-white"
                                 style={{ filter: 'grayscale(100%)' }}
@@ -54,8 +54,8 @@ const Bio: React.FC = () => {
                                 </svg>
                                 Resume
                             </button>
-                       </a> **/}
-                       </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
