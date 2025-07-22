@@ -1,6 +1,67 @@
-@import "tailwindcss";
 
-html {
-    scroll-behavior: smooth;
-  }
-  
+:root {
+  --bg-main: #fefefe;
+  --bg-card: #f8f9fc;
+  --text-main: #0f0f0f;
+  --text-sub: #525252;
+  --btn-bg: #4562D9;
+  --btn-bg-hover: #788DE3;
+  --shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.08);
+  --object: #f2f4f8;
+}
+
+.dark-mode {
+  --bg-main: #0a0a0a;
+  --bg-card: #141414;
+  --text-main: #f8f8f8;
+  --text-sub: #b8b8b8;
+  --btn-bg: #4562D9;
+  --btn-bg-hover: #788DE3;
+  --shadow: 0 0px 3px 2px rgba(206, 202, 202, 0.4);
+  --object: #181818;
+}
+
+
+
+
+/* Apply variables to whole body */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Headers and text */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+}
+
+p, span, li, label {
+  color: var(--text-sub);
+}
+
+/* Reuse the CSS variables for cards and shadows */
+.project-card {
+  background-color: var(--object);
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Example button style */
+button {
+  background-color: var(--btn-bg);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+/* Form fields */
+input, textarea {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  border: 1px solid var(--text-sub);
+}

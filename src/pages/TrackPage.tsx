@@ -13,6 +13,7 @@ const TrackPage: React.FC = ({  }) => {
             <AcademicTrack />
         </div>
     </div>
+    
 </div>
 
     )

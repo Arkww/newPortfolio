@@ -1,13 +1,36 @@
 [
+   {
+    "titleProjet": "Making an artificial Neural network from scratch",
+    "resultRecap": "After coding a few projects about artificial neural networks using high-level libraries like PyTorch, I wanted to learn more about how they work. I watched YouTube videos about the mathematical concepts behind them, found it interesting, and decided to code a very simple ANN myself using only NumPy and pandas. This ANN is a simple image classification network with just two layers trained on the MINST dataset consisting of images in black and white of 28*28 pixels.",
+    "littleTitleProjet": "Making a small artificial network from scratch without pytorch or tensorflow using only numpy and pandas to really understand how the math behind artificial neural networks works.",
+    "categorie": ["AI", "Machine-learning"],
+    "skills": [
+      "Understanding deeply the math behind artificial neural networks",
+      "Attained an accuracy of 0.92 even with this basic model with only two layers",
+      "Learning a new way to implement neural networks with low-level libraries like NumPy and pandas"
+    ],
+    "technologies": ["Python", "Machine-learning", "Deep-learning"],
+    "photoProjet": [
+      {
+        "src": "/assets/ProjectsPhotos/ANNFromScratch2.png",
+        "desc": "The evolution of the weights and biases of my neural network over 1500 epochs"
+      },
+      {
+        "src": "/assets/ProjectsPhotos/ANNFromScratch1.png",
+        "desc": "An image from the dataset classified succesfully by my neural network"
+      }
+    ],
+    "githubLink": "https://github.com/Arkww/FromScratchMINST/"
+  },
   {
     "titleProjet": "Sentiment analysis of Amazon reviews",
-    "littleTitleProjet": "Using a model from NLTK and a model from Hugging face to conduct sentiment analysis on a dataset of 50 0000 Amazon reviews and compared the two ways of doing it to find the most efficient",
+    "littleTitleProjet": "Using a model from NLTK and a model from Hugging face to code sentiment analysis on a dataset of 50 0000 Amazon reviews and compared results",
     "resultRecap": "For this project after cleaning and preparing the data I first implemented a basic sentiment analysis model from the NTLK library. I saw that it wasn't really efficient so I went on hugging face and found a model that looked fitting, I implemented it and it the result were way more satisfying.",
     "categorie": ["Data-science", "NLP"],
     "skills": [
       "Analysing the sentiment of reviews in a dataset of 50 000 reviews",
       "Compared the results of two different models",
-      "Went to look at the Positive 1-Star and Negative 5-Star Reviews to see why did the model failed sometimes"
+      "Analyzed the Positive 1-Star and Negative 5-Star Reviews to see why did the model failed sometimes"
     ],
     "technologies": ["Python", "NLTK", "Hugging Face", "Pandas"],
     "photoProjet": [
@@ -85,7 +108,6 @@
     ],
     "technologies": [
       "Python",
-      "HTML/CSS",
       "JavaScript",
       "Pandas",
       "Leaflet.js",
