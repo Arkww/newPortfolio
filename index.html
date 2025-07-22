@@ -5,10 +5,23 @@
     <link rel="icon" type="image/jpg" href="./assets/favicon-BcD3NjKX.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mathieu Jay</title>
-    <script type="module" crossorigin src="./assets/index-BXimknXu.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CoZwQdVs.css">
+    <script type="module" crossorigin src="./assets/index-Ds6Fpakf.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-ECZlsDIa.css">
   </head>
   <body>
     <div id="root"></div>
   </body>
 </html>
+<script>
+  (function () {
+    try {
+      const theme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (theme === 'dark' || (!theme && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (_) {}
+  })();
+</script>
