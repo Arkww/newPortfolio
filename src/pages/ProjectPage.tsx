@@ -1,4 +1,3 @@
-import Bio from '../components/Bios/2Bio'
 import ProjectMenu from '../components/Project'
 import React from 'react';
 

@@ -1,15 +1,10 @@
 import React from 'react';
-import PhotoMoi1 from '../../../public/assets/MePhotos/PhotoMoi4.jpg';
-import Linkedin from '../../../public/assets/Logos/linkedin.png';
-import Mail from '../../../public/assets/Logos/mail.png';
-import Github from '../../../public/assets/Logos/github.png';
-import Instagram from '../../../public/assets/Logos/instagram.jpg';
 
 const logos = [
-    { src: Linkedin, link: 'https://www.linkedin.com/in/mathieu-jay/' },
-    { src: Mail, link: 'mailto:mathieu.jay2@gmail.com' },
-    { src: Github, link: 'https://github.com/Arkww' },
-    { src: Instagram, link: 'https://www.instagram.com/mathieuaway/' }
+    { src: '/assets/Logos/linkedin.png', link: 'https://www.linkedin.com/in/mathieu-jay/' },
+    { src: '/assets/Logos/mail.png', link: 'mailto:mathieu.jay2@gmail.com' },
+    { src: '/assets/Logos/github.png', link: 'https://github.com/Arkww' },
+    { src: '/assets/Logos/instagram.jpg', link: 'https://www.instagram.com/mathieuaway/' }
 ];
 
 const Bio: React.FC = () => {
@@ -24,7 +19,7 @@ const Bio: React.FC = () => {
             }}
         >
             <img
-                src={PhotoMoi1}
+                src="/assets/MePhotos/PhotoMoi4.jpg"
                 alt="Mathieu Jay"
                 className="w-full h-48 sm:h-64 md:h-72 lg:h-98 object-cover"
             />

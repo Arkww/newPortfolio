@@ -15,19 +15,19 @@
         "Cross-cultural Communication",
         "Research Methodology "
       ],
-      "link": "../public/assets/InternshipReport.pdf",
-      "reference": "../public/assets/UTokyoReference.pdf",
+      "link": "../assets/InternshipReport.pdf",
+      "reference": "../assets/UTokyoReference.pdf",
       "photos": [
         {
-          "src": "../../public/assets/TrackPhotos/Tokyo1.jpg",
+          "src": "../../assets/TrackPhotos/Tokyo1.jpg",
           "description": "Making test with the sensors of the CoralRescue aquarium"
         },
         {
-          "src": "../../public/assets/TrackPhotos/Tokyo2.jpg",
+          "src": "../../assets/TrackPhotos/Tokyo2.jpg",
           "description": "Presenting the AiCOM game to the yearly open campus of the University of Tokyo"  
         },
         {
-          "src": "../../public/assets/TrackPhotos/Tokyo.jpg",
+          "src": "../../assets/TrackPhotos/Tokyo.jpg",
           "description": "Giving a tour to french highschool students visiting the University of Tokyo for the open campus"
         }
       ]
@@ -50,15 +50,15 @@
       "reference": "",
       "photos": [
         {
-          "src": "../../public/assets/TrackPhotos/BDE.jpg",
+          "src": "../../assets/TrackPhotos/BDE.jpg",
           "description": "Crêpes event to collect money for the 'Téléthon', a french caricative association helping the research agaisnt cancer"
         },
         {
-          "src": "../../public/assets/TrackPhotos/BDE1.png",
+          "src": "../../assets/TrackPhotos/BDE1.png",
           "description": "Welcome speech at the beginning of the academic year for the new students"
         },
         {
-          "src": "../../public/assets/TrackPhotos/BDE2.png",
+          "src": "../../assets/TrackPhotos/BDE2.png",
           "description": "The whole team of the association"
         }
       ]
@@ -82,15 +82,15 @@
        "reference": "",
       "photos": [
         {
-          "src": "../../public/assets/TrackPhotos/IUT.jpeg",
+          "src": "../../assets/TrackPhotos/IUT.jpeg",
           "description": "IUT Bordeaux computer science department"
         },
         {
-          "src": "../../public/assets/TrackPhotos/IUT1.jpg",
+          "src": "../../assets/TrackPhotos/IUT1.jpg",
           "description": "Brainstorming fora school project"
         },
         {
-          "src": "../../public/assets/TrackPhotos/IUT2.jpg",
+          "src": "../../assets/TrackPhotos/IUT2.jpg",
           "description": "With my team after a successful final project presentation"
         }
       ]

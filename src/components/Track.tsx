@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import UniversityOfTokyo from '../../public/assets/TrackPhotos/UniversityOfTokyo.png';
-import IUT from '../../public/assets/TrackPhotos/IUT.png';
-import BDE from '../../public/assets/Logos/LogoBDE.png';
 
 // Define the structure for academic experience data
 interface AcademicExperience {
@@ -11,8 +8,8 @@ interface AcademicExperience {
     period: string;
     location: string;
     fullDescription: string;
-    link: string | undefined; // Link to a report or additional information
-    reference: string | undefined; // Link to a reference letter
+    link: string | undefined;
+    reference: string | undefined;
     skillsGained: string[];
     photos: {
         src: string;
@@ -33,16 +30,15 @@ const AcademicTrack: React.FC = () => {
     const [selectedExperience, setSelectedExperience] = useState<AcademicExperience | null>(null);
     const [experiencesData, setExperiencesData] = useState<AcademicExperience[]>([]);
 
-   useEffect(() => {
-    // Load experiences from JSON file
-    import('../Experiences.json')
-        .then(data => {
-            setExperiencesData(data.academicExperiences);
-        })
-        .catch(error => {
-            console.error('Error loading experiences data:', error);
-        });
-}, []);
+    useEffect(() => {
+        import('../Experiences.json')
+            .then(data => {
+                setExperiencesData(data.academicExperiences);
+            })
+            .catch(error => {
+                console.error('Error loading experiences data:', error);
+            });
+    }, []);
 
     const handleExperienceClick = (experienceId: string) => {
         const experience = experiencesData.find(exp => exp.id === experienceId);
@@ -85,12 +81,12 @@ const AcademicTrack: React.FC = () => {
                                 onClick={() => handleExperienceClick('university-tokyo')}
                             >
                                 <div className="flex justify-center sm:justify-start">
-                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src={UniversityOfTokyo} alt="University of Tokyo" />
+                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src="/assets/TrackPhotos/UniversityOfTokyo.png" alt="University of Tokyo" />
                                 </div>
                                 <div className="p-4 sm:p-6 flex-1">
                                     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">The University of Tokyo</h3>
                                     <p style={{ color: 'var(--text-main)' }} className="text-base sm:text-lg">
-                                        Internship : Data vizualization, AI game and machine learning.
+                                        Internship : Data visualization, AI game and machine learning.
                                     </p>
                                     <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
                                         April 2025 - July 2025
@@ -111,7 +107,7 @@ const AcademicTrack: React.FC = () => {
                                 onClick={() => handleExperienceClick('assopena-president')}
                             >
                                 <div className="flex justify-center sm:justify-start">
-                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src={BDE} alt="Assopeña" />
+                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src="/assets/Logos/LogoBDE.png" alt="Assopeña" />
                                 </div>
                                 <div className="p-4 sm:p-6 flex-1">
                                     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Student association of the University</h3>
@@ -137,7 +133,7 @@ const AcademicTrack: React.FC = () => {
                                 onClick={() => handleExperienceClick('iut-bordeaux')}
                             >
                                 <div className="flex justify-center sm:justify-start">
-                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src={IUT} alt="IUT" />
+                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src="/assets/TrackPhotos/IUT.png" alt="IUT" />
                                 </div>
                                 <div className="p-4 sm:p-6 flex-1">
                                     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">University of Bordeaux</h3>
@@ -221,7 +217,7 @@ const AcademicTrack: React.FC = () => {
                                 </div>
 
                                 {/* Skills Column */}
-                                    <div className="lg:col-span-1">
+                                <div className="lg:col-span-1">
                                     <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3">Skills Gained</h3>
                                     <ul className="list-disc pl-4 sm:pl-5 space-y-1 sm:space-y-2" style={{ color: "var(--text-sub)" }}>
                                         {selectedExperience.skillsGained.map((skill, index) => (
