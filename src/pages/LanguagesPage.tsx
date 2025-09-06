@@ -48,8 +48,18 @@ const LanguagesPage: React.FC = () => {
                         }}
                     >
                         <img className="w-40 h-25 mb-4" src="/assets/CountryPictures/UK.png" alt="United Kingdom" />
-                        <h3 className="text-xl font-semibold">C1</h3>
+                        <h3 className="text-xl font-semibold">C1 - TOELF 104</h3>
                         <p style={{ color: 'var(--text-sub)' }} className="text-sm">Full professional proficiency</p>
+                        <p className="mt-2 sm:mt-3">
+                            <a
+                                href="/assets/TOELF_SCORE.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 hover:text-blue-700 underline"
+                            >
+                                Download certificate
+                            </a>
+                        </p>
                     </li>
 
                     {/* Chinese */}
