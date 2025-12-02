@@ -65,12 +65,37 @@ const AcademicTrack: React.FC = () => {
                         transition: 'background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease',
                     }}
                 >
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">Academic Track</h2>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">Academic and professional Track</h2>
                     <div
                         className="max-h-96 sm:max-h-150 overflow-y-auto scrollable"
                         onWheel={(e) => e.stopPropagation()}
                     >
                         <ul className="space-y-4 sm:space-y-6 p-2 sm:p-6">
+                            {/* Senate */}
+                            <li
+                                className="flex flex-col sm:flex-row rounded-md border cursor-pointer transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg origin-center"
+                                style={{
+                                    borderColor: 'var(--text-sub)',
+                                    backgroundColor: 'var(--object)',
+                                }}
+                                onClick={() => handleExperienceClick('senat')}
+                            >
+                                <div className="flex justify-center sm:justify-start">
+                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src="/assets/TrackPhotos/senat.jpg" alt="Senate" />
+                                </div>
+                                <div className="p-4 sm:p-6 flex-1">
+                                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">The Senate of France</h3>
+                                    <p style={{ color: 'var(--text-main)' }} className="text-base sm:text-lg">
+                                        Apprenticeship : AI engineer
+                                    </p>
+                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
+                                        September 2025 - July 2026
+                                    </p>
+                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
+                                        Paris - Japan
+                                    </p>
+                                </div>
+                            </li>
                             {/* University of Tokyo */}
                             <li
                                 className="flex flex-col sm:flex-row rounded-md border cursor-pointer transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg origin-center"
@@ -86,7 +111,7 @@ const AcademicTrack: React.FC = () => {
                                 <div className="p-4 sm:p-6 flex-1">
                                     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">The University of Tokyo</h3>
                                     <p style={{ color: 'var(--text-main)' }} className="text-base sm:text-lg">
-                                        Internship : Data visualization, AI game and machine learning.
+                                        Internship : Data visualization, AI game and machine learning
                                     </p>
                                     <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
                                         April 2025 - July 2025

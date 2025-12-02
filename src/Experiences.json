@@ -1,6 +1,37 @@
 {
   "academicExperiences": [
     {
+      "id": "senat",
+      "title": "The Senate of France",
+      "description": "Apprenticeship : AI Engineer",
+      "period": "September 2025 - July 2026",
+      "location": "Paris - France",
+      "fullDescription": "For the third year of my bachelor's degree at the University of Bordeaux, I am also completing a one-year apprenticeship. Each month, I spend three weeks working at the French Senate in Paris as an AI Engineer and one week studying in Bordeaux. My mission at the Senate is to help modernize existing applications by implementing AI solutions to make them more efficient and convenient for the French Senators to use. For instance, my first assignment was to implement a computer vision model within the application where senators submit their work expenses as receipts or invoices for reimbursement. I implemented a model to automatically read the content of these documents, extract the date and price, and categorize each expense accordingly using an LLM running locally. This solution saves senators and their collaborators considerable time, as they have to process thousands of expenses every year. My job at the Senate is currently still ongoing.",
+      "skillsGained": [
+        "Computer vision",
+        "Automatic extraction of document data",
+        "Making an AI architecture with limited ressources",
+        "LLM integration",
+        "Handling highly classified data with care"
+      ],
+      "link": "",
+      "reference": "",
+      "photos": [
+        {
+          "src": "../../assets/TrackPhotos/Senat.jpg",
+          "description": "Having the opportunity to work in the prestigious Senate building in Paris"
+        },
+        {
+          "src": "../../assets/TrackPhotos/Senat1.png",
+          "description": "The view on my OCR model analyzing an invoice"
+        },
+        {
+          "src": "../../assets/TrackPhotos/Senat2.png",
+          "description": "An example of the answer given by the LLM after analyzing the extracted text"
+        }
+      ]
+    },
+    {
       "id": "university-tokyo",
       "title": "The University of Tokyo",
       "description": "Internship: Embedded systems, data analysis and machine learning",
@@ -24,7 +55,7 @@
         },
         {
           "src": "../../assets/TrackPhotos/Tokyo2.jpg",
-          "description": "Presenting the AiCOM game to the yearly open campus of the University of Tokyo"  
+          "description": "Presenting the AiCOM game to the yearly open campus of the University of Tokyo"
         },
         {
           "src": "../../assets/TrackPhotos/Tokyo.jpg",
@@ -78,8 +109,8 @@
         "Object-Oriented Programming",
         "Team collaboration"
       ],
-       "link": "",
-       "reference": "",
+      "link": "",
+      "reference": "",
       "photos": [
         {
           "src": "../../assets/TrackPhotos/IUT.jpeg",

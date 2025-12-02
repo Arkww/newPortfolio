@@ -71,9 +71,20 @@ const LanguagesPage: React.FC = () => {
                         }}
                     >
                         <img className="w-40 h-25 mb-4" src="/assets/CountryPictures/china.png" alt="China" />
-                        <h3 className="text-xl font-semibold">B2</h3>
-                        <p style={{ color: 'var(--text-sub)' }} className="text-sm">Professional working proficiency</p>
+                        <h3 className="text-xl font-semibold">C1 - HSK5</h3>
+                        <p style={{ color: 'var(--text-sub)' }} className="text-sm">Full professional proficiency</p>
+                        <p className="mt-2 sm:mt-3">
+                            <a
+                                href="/assets/HSK_SCORE.jpg"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 hover:text-blue-700 underline"
+                            >
+                                Download certificate
+                            </a>
+                        </p>
                     </li>
+
 
                     {/* Japanese */}
                     <li
