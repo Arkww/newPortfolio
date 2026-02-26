@@ -76,7 +76,7 @@ const AcademicTrack: React.FC = () => {
                             />
 
                             {[
-                                { id: 'senat', logo: '/assets/Logos/senat.jpg', title: 'Senate of France', role: 'Apprenticeship · AI Engineer', period: 'Sep 2025 – Jul 2026', location: 'Paris, France' },
+                                { id: 'senat', logo: '/assets/Logos/senatLogo.jpg', title: 'Senate of France', role: 'Apprenticeship · AI Engineer', period: 'Sep 2025 – Jul 2026', location: 'Paris, France' },
                                 { id: 'university-tokyo', logo: '/assets/Logos/UniversityOfTokyo.png', title: 'University of Tokyo', role: 'Research Internship', period: 'Apr 2025 – Jul 2025', location: 'Tokyo, Japan' },
                                 { id: 'assopena-president', logo: '/assets/Logos/LogoBDE.png', title: 'Student Association', role: 'President', period: '2024 – 2025', location: 'Bordeaux, France' },
                                 { id: 'iut-bordeaux', logo: '/assets/Logos/IUT.png', title: 'University of Bordeaux', role: 'B.Sc. Computer Science, International Track', period: '2023 – 2026', location: 'Bordeaux, France' },
@@ -101,10 +101,10 @@ const AcademicTrack: React.FC = () => {
                                     >
                                         {/* Logo */}
                                         <div
-                                            className="flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center"
+                                            className="flex-shrink-0 w-28 h-28 rounded-xl overflow-hidden flex items-center justify-center"
                                             style={{ backgroundColor: 'var(--bg-card)' }}
                                         >
-                                            <img src={entry.logo} alt={entry.title} className="w-16 h-16 object-contain" />
+                                            <img src={entry.logo} alt={entry.title} className="w-24 h-24 object-contain" />
                                         </div>
 
                                         {/* Text */}
