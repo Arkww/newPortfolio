@@ -5,6 +5,7 @@ import Presentation from './components/Presentation';
 import TrackPage from './pages/TrackPage';
 import ProjetPage from './pages/ProjectPage';
 import LanguagesPage from './pages/LanguagesPage';
+import Footer from './components/Footer';
 import './App.css';
 
 // Theme Toggle Button Component
@@ -64,6 +65,11 @@ const AppContent = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
 
+  const scrollTo = (section: "track" | "projects" | "languages" | "top") => {
+    const map = { track: trackRef, projects: projectRef, languages: languagesRef, top: presentationRef };
+    map[section].current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <Router>
       <div className="flex flex-col">
@@ -109,9 +115,10 @@ const AppContent = () => {
         <div ref={projectRef} className="min-h-screen">
           <ProjetPage />
         </div>
-        <div ref={languagesRef} className="min-h-screen">
+        <div ref={languagesRef} className="min-h-160">
           <LanguagesPage />
         </div>
+        <Footer onScrollTo={scrollTo} />
       </div>
     </Router>
   );

@@ -6,8 +6,9 @@
       "description": "Apprenticeship : AI Engineer",
       "period": "September 2025 - July 2026",
       "location": "Paris - France",
-      "fullDescription": "For the third year of my bachelor's degree at the University of Bordeaux, I am also completing a one-year apprenticeship. Each month, I spend three weeks working at the French Senate in Paris as an AI Engineer and one week studying in Bordeaux. My mission at the Senate is to help modernize existing applications by implementing AI solutions to make them more efficient and convenient for the French Senators to use. For instance, my first assignment was to implement a computer vision model within the application where senators submit their work expenses as receipts or invoices for reimbursement. I implemented a model to automatically read the content of these documents, extract the date and price, and categorize each expense accordingly using an LLM running locally. This solution saves senators and their collaborators considerable time, as they have to process thousands of expenses every year. My job at the Senate is currently still ongoing.",
+      "fullDescription": "Worked for a year in the Senate, collaborating with members of the Senate IT department's development team to help them implement artificial intelligence solutions in their existing applications.\n\nMy role is to analyze the Senate IT department's current software, come up with ideas for implementing AI in this software, propose them to my superiors and, if they are accepted, design and implement them from A to Z independently and within the restrictions imposed by data sensitivity (100% local architecture).\n\nImplementation of an OCR model and local LLM to automatically process Senators' invoices (price and date extraction, expense classification). Design and production of an MCP architecture connected to a RAG to assist with searches within the Senate's intranet wiki.",
       "skillsGained": [
+
         "Computer vision",
         "Automatic extraction of document data",
         "Making an AI architecture with limited ressources",
@@ -19,15 +20,15 @@
       "photos": [
         {
           "src": "../../assets/TrackPhotos/Senat.jpg",
-          "description": "Having the opportunity to work in the prestigious Senate building in Paris"
+          "description": "Having the opportunity to work in the prestigious Senate of France, one of the oldest institutions in the country and a symbol of the French Republic."
         },
         {
           "src": "../../assets/TrackPhotos/Senat1.png",
-          "description": "The view on my OCR model analyzing an invoice"
+          "description": "The view on my OCR model analyzing an invoice and extracting the price and date from it"
         },
         {
           "src": "../../assets/TrackPhotos/Senat2.png",
-          "description": "An example of the answer given by the LLM after analyzing the extracted text"
+          "description": "The workflow of the RAG architecture I designed for both ingestion and querying of the Senate's intranet wiki, a very useful tool for the employees of the Senate to find information in the huge amount of documents they have to handle on a daily basis"
         }
       ]
     },
@@ -100,7 +101,7 @@
       "description": "Bachelor degree: Bachelor of Computer Science, International track",
       "period": "2023 - 2026",
       "location": "Bordeaux - France",
-      "fullDescription": "Pursuing a Bachelor's degree (BUT) in Computer Science at the University of Bordeaux, the lessons taught range from a wide variety of subjects from web development to data-science and algorithmics. One of the strong points of the formation is that frequency of team projets that we have to complete with other students randomly assigned, teaching us to work as a team in a concrete environment. I also follow the international track of the degree with classes of computer science and mathematics in English as well as requiring an internship abroad which I completed in Japan, this really taught me how to work in a technical and internatonal environment",
+      "fullDescription": "Pursuing a Bachelor's degree (BUT) in Computer Science at the University of Bordeaux, the lessons taught range from a wide variety of subjects from web development to data-science and algorithmics. One of the strong points of the formation is that frequency of team projets that we have to complete with other students randomly assigned, teaching us to work as a team in a concrete environment. I also follow the international track of the degree with classes of computer science and mathematics in English as well as requiring an internship abroad which I completed in Japan, this really taught me how to work in a technical and international environment",
       "skillsGained": [
         "Software Development",
         "Algorithm Design and Analysis",
@@ -110,7 +111,7 @@
         "Team collaboration"
       ],
       "link": "",
-      "reference": "",
+      "reference": "../assets/IUTReference.pdf",
       "photos": [
         {
           "src": "../../assets/TrackPhotos/IUT.jpeg",
@@ -118,7 +119,7 @@
         },
         {
           "src": "../../assets/TrackPhotos/IUT1.jpg",
-          "description": "Brainstorming fora school project"
+          "description": "Brainstorming for a school project"
         },
         {
           "src": "../../assets/TrackPhotos/IUT2.jpg",

@@ -13,7 +13,7 @@ const LanguagesPage: React.FC = () => {
                 className="text-xl mb-2 transition-colors duration-300 text-baseline pl-20 pr-20"
                 style={{ color: 'var(--nav-text)' }}
             >
-                I see language learning only as a hobby that make me able to make a lot of friends but I also noticed that spending time learning new <span style={{ color: '#4562D9' }}>grammars</span> and new <span style={{ color: '#4562D9' }}>syntaxes</span> also really improve my <span style={{ color: '#4562D9' }}>logic</span> and <span style={{ color: '#4562D9' }}>problems solving skills</span>.
+                I see language learning only as a hobby that make me able to make a lot of friends but I also noticed that spending time learning new <span style={{ color: '#4562D9' }}>grammars</span> and new <span style={{ color: '#4562D9' }}>syntaxes</span> also improve my <span style={{ color: '#4562D9' }}>logic</span> and <span style={{ color: '#4562D9' }}>problems solving skills</span>.
             </p>
             <div
                 className="flex-1 m-10 p-5 rounded-lg"

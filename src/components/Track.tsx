@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ImageLightbox from './ImageLightbox';
 
 // Define the structure for academic experience data
 interface AcademicExperience {
@@ -28,6 +29,7 @@ const EffectOnMount: React.FC<{ effect: () => (() => void) | void }> = ({ effect
 
 const AcademicTrack: React.FC = () => {
     const [selectedExperience, setSelectedExperience] = useState<AcademicExperience | null>(null);
+    const [selectedPhoto, setSelectedPhoto] = useState<{ src: string; description: string } | null>(null);
     const [experiencesData, setExperiencesData] = useState<AcademicExperience[]>([]);
 
     useEffect(() => {
@@ -49,15 +51,9 @@ const AcademicTrack: React.FC = () => {
 
     return (
         <div className="flex flex-col w-full">
-            <div
-                className="flex flex-col w-full max-w-7xl lg:max-w-none lg:w-300 mx-auto px-4 sm:px-6 lg:px-8"
-                style={{
-                    backgroundColor: 'var(--bg-main)',
-                    transition: 'background-color 0.3s ease',
-                }}
-            >
+            <div className="flex flex-col w-full px-2 sm:px-4">
                 <div
-                    className="w-full p-4 sm:p-6 lg:p-10 rounded-lg"
+                    className="w-full p-5 sm:p-8 rounded-2xl"
                     style={{
                         backgroundColor: 'var(--bg-card)',
                         color: 'var(--text-main)',
@@ -65,115 +61,77 @@ const AcademicTrack: React.FC = () => {
                         transition: 'background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease',
                     }}
                 >
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">Academic and professional Track</h2>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 tracking-tight">Academic & Professional Track</h2>
+
                     <div
-                        className="max-h-96 sm:max-h-150 overflow-y-auto scrollable"
+                        className="overflow-y-auto overflow-x-hidden scrollable"
                         onWheel={(e) => e.stopPropagation()}
                     >
-                        <ul className="space-y-4 sm:space-y-6 p-2 sm:p-6">
-                            {/* Senate */}
-                            <li
-                                className="flex flex-col sm:flex-row rounded-md border cursor-pointer transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg origin-center"
-                                style={{
-                                    borderColor: 'var(--text-sub)',
-                                    backgroundColor: 'var(--object)',
-                                }}
-                                onClick={() => handleExperienceClick('senat')}
-                            >
-                                <div className="flex justify-center sm:justify-start">
-                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src="/assets/TrackPhotos/senat.jpg" alt="Senate" />
-                                </div>
-                                <div className="p-4 sm:p-6 flex-1">
-                                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">The Senate of France</h3>
-                                    <p style={{ color: 'var(--text-main)' }} className="text-base sm:text-lg">
-                                        Apprenticeship : AI engineer
-                                    </p>
-                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
-                                        September 2025 - July 2026
-                                    </p>
-                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
-                                        Paris - Japan
-                                    </p>
-                                </div>
-                            </li>
-                            {/* University of Tokyo */}
-                            <li
-                                className="flex flex-col sm:flex-row rounded-md border cursor-pointer transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg origin-center"
-                                style={{
-                                    borderColor: 'var(--text-sub)',
-                                    backgroundColor: 'var(--object)',
-                                }}
-                                onClick={() => handleExperienceClick('university-tokyo')}
-                            >
-                                <div className="flex justify-center sm:justify-start">
-                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src="/assets/TrackPhotos/UniversityOfTokyo.png" alt="University of Tokyo" />
-                                </div>
-                                <div className="p-4 sm:p-6 flex-1">
-                                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">The University of Tokyo</h3>
-                                    <p style={{ color: 'var(--text-main)' }} className="text-base sm:text-lg">
-                                        Internship : Data visualization, AI game and machine learning
-                                    </p>
-                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
-                                        April 2025 - July 2025
-                                    </p>
-                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
-                                        Tokyo - Japan
-                                    </p>
-                                </div>
-                            </li>
+                        {/* Timeline */}
+                        <div className="relative pl-8">
+                            {/* Vertical line */}
+                            <div
+                                className="absolute left-3.5 top-2 bottom-2 w-0.5"
+                                style={{ backgroundColor: 'var(--text-sub)', opacity: 0.2 }}
+                            />
 
-                            {/* BDE / Association */}
-                            <li
-                                className="flex flex-col sm:flex-row rounded-md border cursor-pointer transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg origin-center"
-                                style={{
-                                    borderColor: 'var(--text-sub)',
-                                    backgroundColor: 'var(--object)',
-                                }}
-                                onClick={() => handleExperienceClick('assopena-president')}
-                            >
-                                <div className="flex justify-center sm:justify-start">
-                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src="/assets/Logos/LogoBDE.png" alt="Assopeña" />
-                                </div>
-                                <div className="p-4 sm:p-6 flex-1">
-                                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Student association of the University</h3>
-                                    <p style={{ color: 'var(--text-main)' }} className="text-base sm:text-lg">
-                                        President
-                                    </p>
-                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
-                                        2024 - 2025
-                                    </p>
-                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
-                                        Bordeaux - France
-                                    </p>
-                                </div>
-                            </li>
+                            {[
+                                { id: 'senat', logo: '/assets/Logos/senat.jpg', title: 'Senate of France', role: 'Apprenticeship · AI Engineer', period: 'Sep 2025 – Jul 2026', location: 'Paris, France' },
+                                { id: 'university-tokyo', logo: '/assets/Logos/UniversityOfTokyo.png', title: 'University of Tokyo', role: 'Research Internship', period: 'Apr 2025 – Jul 2025', location: 'Tokyo, Japan' },
+                                { id: 'assopena-president', logo: '/assets/Logos/LogoBDE.png', title: 'Student Association', role: 'President', period: '2024 – 2025', location: 'Bordeaux, France' },
+                                { id: 'iut-bordeaux', logo: '/assets/Logos/IUT.png', title: 'University of Bordeaux', role: 'B.Sc. Computer Science, International Track', period: '2023 – 2026', location: 'Bordeaux, France' },
+                            ].map((entry) => (
+                                <div key={entry.id} className="relative mb-7 last:mb-0">
+                                    {/* Timeline dot */}
+                                    <div
+                                        className="absolute -left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-2 z-10"
+                                        style={{ backgroundColor: '#4562D9', borderColor: 'var(--bg-card)' }}
+                                    />
 
-                            {/* IUT Bordeaux */}
-                            <li
-                                className="flex flex-col sm:flex-row rounded-md border cursor-pointer transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg origin-center"
-                                style={{
-                                    borderColor: 'var(--text-sub)',
-                                    backgroundColor: 'var(--object)',
-                                }}
-                                onClick={() => handleExperienceClick('iut-bordeaux')}
-                            >
-                                <div className="flex justify-center sm:justify-start">
-                                    <img className="w-20 sm:w-24 md:w-30 m-3 sm:m-5" src="/assets/TrackPhotos/IUT.png" alt="IUT" />
+                                    {/* Card */}
+                                    <div
+                                        className="flex items-center gap-6 p-5 sm:p-6 rounded-xl cursor-pointer transition-all duration-200 hover:shadow-lg group"
+                                        style={{
+                                            backgroundColor: 'var(--object)',
+                                            border: '1px solid transparent',
+                                        }}
+                                        onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = '#4562D9'; }}
+                                        onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = 'transparent'; }}
+                                        onClick={() => handleExperienceClick(entry.id)}
+                                    >
+                                        {/* Logo */}
+                                        <div
+                                            className="flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center"
+                                            style={{ backgroundColor: 'var(--bg-card)' }}
+                                        >
+                                            <img src={entry.logo} alt={entry.title} className="w-16 h-16 object-contain" />
+                                        </div>
+
+                                        {/* Text */}
+                                        <div className="flex-1 min-w-0">
+                                            <p className="font-semibold text-lg sm:text-xl truncate" style={{ color: 'var(--text-main)' }}>
+                                                {entry.title}
+                                            </p>
+                                            <p className="text-base sm:text-lg truncate" style={{ color: '#4562D9' }}>
+                                                {entry.role}
+                                            </p>
+                                            <p className="text-sm sm:text-base mt-1" style={{ color: 'var(--text-sub)' }}>
+                                                {entry.period} · {entry.location}
+                                            </p>
+                                        </div>
+
+                                        {/* Arrow */}
+                                        <svg
+                                            className="flex-shrink-0 w-6 h-6 opacity-30 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-200"
+                                            style={{ color: '#4562D9' }}
+                                            fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24"
+                                        >
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div className="p-4 sm:p-6 flex-1">
-                                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">University of Bordeaux</h3>
-                                    <p style={{ color: 'var(--text-main)' }} className="text-base sm:text-lg">
-                                        Bachelor of Computer Science, International track
-                                    </p>
-                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
-                                        2023 - 2026
-                                    </p>
-                                    <p style={{ color: 'var(--text-sub)' }} className="text-sm sm:text-base md:text-lg">
-                                        Bordeaux - France
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,10 +220,11 @@ const AcademicTrack: React.FC = () => {
                                                 <img
                                                     src={photo.src}
                                                     alt={photo.description}
-                                                    className="w-full h-40 sm:h-48 md:h-56 lg:h-64 xl:h-80 object-cover rounded-lg mb-2"
+                                                    className="w-full h-40 sm:h-48 md:h-56 lg:h-64 xl:h-80 object-cover rounded-lg mb-2 cursor-zoom-in hover:opacity-90 transition-opacity"
                                                     style={{
                                                         border: "1px solid var(--text-sub)",
                                                     }}
+                                                    onClick={(e) => { e.stopPropagation(); setSelectedPhoto(photo); }}
                                                 />
                                                 <p
                                                     style={{ color: "var(--text-sub)" }}
@@ -298,6 +257,15 @@ const AcademicTrack: React.FC = () => {
                         </button>
                     </div>
                 </div>
+            )}
+
+            {/* Lightbox */}
+            {selectedPhoto && (
+                <ImageLightbox
+                    src={selectedPhoto.src}
+                    description={selectedPhoto.description}
+                    onClose={() => setSelectedPhoto(null)}
+                />
             )}
         </div>
     );

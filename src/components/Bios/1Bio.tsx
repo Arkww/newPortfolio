@@ -10,7 +10,7 @@ const logos = [
 const Bio: React.FC = () => {
     return (
         <div
-            className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:h-155 lg:w-120 rounded-lg overflow-hidden"
+            className="mx-auto max-w-sm sm:max-w-md md:max-w-xl lg:w-120 rounded-lg overflow-hidden"
             style={{
                 backgroundColor: 'var(--bg-card)',
                 color: 'var(--text-main)',
@@ -19,19 +19,21 @@ const Bio: React.FC = () => {
             }}
         >
             <img
-                src="/assets/MePhotos/PhotoMoi4.jpg"
+                src="/assets/MePhotos/PhotoMoi2.jpg"
                 alt="Mathieu Jay"
-                className="w-full h-48 sm:h-64 md:h-72 lg:h-98 object-cover"
+                className="w-full h-56 sm:h-72 md:h-80 lg:h-80 object-cover"
             />
-            <div className="p-4 sm:p-6">
-                <h2 className="text-xl sm:text-2xl font-bold mb-2">Mathieu Jay</h2>
+            <div className="p-5 sm:p-7">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-3">Mathieu Jay</h2>
                 <div className="flex flex-col justify-between lg:h-full">
                     <p
-                        className="mb-4 text-sm sm:text-base"
+                        className="mb-4 text-base sm:text-lg"
                         style={{ color: 'var(--text-sub)' }}
                     >
-                        Second year student in computer science at the IUT of Bordeaux,
-                        following the international track with classes in French and English.
+                        Third year student majoring in computer science at the University of Bordeaux.
+                        I am completing my third year will doing a apprenticeship at the French Senate in Paris
+                        where I work as an AI engineer designing and implementing AI solutions inside existing apps that 
+                        serves the French Senators and civil servants.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 lg:mt-auto">
@@ -41,7 +43,7 @@ const Bio: React.FC = () => {
                                     <img
                                         src={logo.src}
                                         alt="logo"
-                                        className="w-8 h-8 sm:w-10 sm:h-8 md:w-15 md:h-8 object-contain transition-transform duration-200 transform hover:scale-110 hover:shadow-lg"
+                                        className="w-9 h-9 sm:w-11 sm:h-9 object-contain transition-transform duration-200 transform hover:scale-110"
                                     />
                                 </a>
                             ))}

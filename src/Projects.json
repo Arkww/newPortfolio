@@ -1,4 +1,25 @@
-[
+[ {
+    "titleProjet": "YOLO vs Custom CNN",
+    "littleTitleProjet": "Supervised learning performance audit comparing YOLO and a custom CNN for 3D object detection using an Intel RealSense depth camera.",
+    "resultRecap": "The goal of this project was to conduct a supervised learning performance audit comparing YOLO and a custom CNN. Detected objects are located in 3D using an Intel RealSense depth camera and an ArUco marker as world reference. The bounding box center is deprojected to 3D camera coordinates, then transformed to world coordinates via solvePnP. A PyQt6 desktop app provides three tabs: Detection (real-time inference), Training (model training), and Calibration (camera calibration via chessboard). I was responsible for the CNN conception and development.",
+    "categorie": ["AI", "Machine-learning"],
+    "skills": [
+      "Designing and training a custom CNN for object detection",
+      "Comparing model performance using IoU and confusion matrices",
+      "3D localisation of detected objects using RealSense depth camera and ArUco markers",
+      "Integrating computer vision pipeline into a PyQt6 desktop application"
+    ],
+    "technologies": ["PyTorch", "YOLO", "OpenCV", "Deep-learning"],
+    "photoProjet": [{
+        "src": "/assets/ProjectsPhotos/customCNN.gif",
+        "desc": "The custom CNN successfully detecting objects in real-time, with the bounding box center deprojected to 3D coordinates and displayed in the PyQt6 app"
+      },
+      {
+        "src": "/assets/ProjectsPhotos/customCNN2.png",
+        "desc": "Benchmark comparaison of Yolo11n and my custom CNN"
+      }],
+    "githubLink": "https://github.com/elias-utf8/YOLOvsCustomCNN"
+  },
    {
     "titleProjet": "Making an artificial Neural network from scratch",
     "resultRecap": "After coding a few projects about artificial neural networks using high-level libraries like PyTorch, I wanted to learn more about how they work. I watched YouTube videos about the mathematical concepts behind them, found it interesting, and decided to code a very simple ANN myself using only NumPy and pandas. This ANN is a simple image classification network with just two layers trained on the MINST dataset consisting of images in black and white of 28*28 pixels.",
@@ -9,15 +30,17 @@
       "Attained an accuracy of 0.92 even with this basic model with only two layers",
       "Learning a new way to implement neural networks with low-level libraries like NumPy and pandas"
     ],
-    "technologies": ["Python", "Machine-learning", "Deep-learning"],
+    "technologies": ["Python", "Machine-learning", "Deep-learning", "Computer-vision"],
     "photoProjet": [
       {
         "src": "/assets/ProjectsPhotos/ANNFromScratch2.png",
-        "desc": "The evolution of the weights and biases of my neural network over 1500 epochs"
+          "desc": "An image from the dataset classified succesfully by my neural network"
+
       },
       {
         "src": "/assets/ProjectsPhotos/ANNFromScratch1.png",
-        "desc": "An image from the dataset classified succesfully by my neural network"
+        "desc": "The evolution of the weights and biases of my neural network over 1500 epochs"
+
       }
     ],
     "githubLink": "https://github.com/Arkww/FromScratchMINST/"
@@ -56,7 +79,7 @@
       "Attained an accuracy of 0.98",
       "Importing and adapting a confusion matrix"
     ],
-    "technologies": ["Python", "Pytorch"],
+    "technologies": ["Python", "Pytorch", "Computer-vision", "Deep-learning"],
     "photoProjet": [
       {
         "src": "/assets/ProjectsPhotos/ChineseCharacters1.png",
@@ -154,7 +177,7 @@
   {
     "titleProjet": "CIFAR10 Image recognition",
     "littleTitleProjet": "Training a deep learning model to recognize photos of animals and vehicles",
-    "categorie": ["Data-science", "Machine-learning"],
+    "categorie": ["Data-science", "Machine-learning", "Computer-vision"],
     "resultRecap": "For my first project in deep learning I coded an AI model using convolutional neural networks to recognize photos of animals and vehicles from the CIFAR10 dataset. The model reached an accuracy of 85% and I was able to successfully recognize my cats.",
     "skills": [
       "Making a model with convolutional neural networks",

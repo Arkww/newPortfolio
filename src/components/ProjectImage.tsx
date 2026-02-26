@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ImageLightbox from "./ImageLightbox";
 
 type ProjectImagesProps = {
   selectedProject: {
@@ -7,35 +8,39 @@ type ProjectImagesProps = {
 };
 
 const ProjectImages: React.FC<ProjectImagesProps> = ({ selectedProject }) => {
-  const [zoomedImage, setZoomedImage] = useState<string | null>(null);
+  const [selectedPhoto, setSelectedPhoto] = useState<{ src: string; desc: string } | null>(null);
 
   return (
     <div className="mt-3">
       {selectedProject.photoProjet.length > 0 && (
         <>
-          <h3 className="font-bold text-lg">Images:</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <h3 className="font-bold text-base sm:text-lg mb-3">Gallery</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {selectedProject.photoProjet.map((photo, index) => (
-              <div key={index} className="mt-2">
+              <div key={index} className="flex flex-col">
                 <img
                   src={photo.src}
                   alt={photo.desc}
-                  className="w-full h-50 object-cover rounded cursor-pointer"
-                  onClick={() => setZoomedImage(photo.src)}
+                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-2 cursor-zoom-in hover:opacity-90 transition-opacity"
+                  style={{ border: "1px solid var(--text-sub)" }}
+                  onClick={(e) => { e.stopPropagation(); setSelectedPhoto(photo); }}
                 />
-                <p className="text-sm text-gray-600">{photo.desc}</p>
+                <p className="text-xs sm:text-sm text-center" style={{ color: "var(--text-sub)" }}>
+                  {photo.desc}
+                </p>
               </div>
             ))}
           </div>
         </>
       )}
-      {zoomedImage && (
-        <div
-          className="fixed inset-0 bg-white bg-opacity-40 backdrop-blur-lg flex justify-center items-center z-50"
-          onClick={() => setZoomedImage(null)}
-        >
-          <img src={zoomedImage} alt="Zoomed" className="max-w-full max-h-full rounded-lg shadow-lg" />
-        </div>
+
+      {/* Lightbox */}
+      {selectedPhoto && (
+        <ImageLightbox
+          src={selectedPhoto.src}
+          description={selectedPhoto.desc}
+          onClose={() => setSelectedPhoto(null)}
+        />
       )}
     </div>
   );

@@ -56,10 +56,10 @@ const ProjectMenu: React.FC = () => {
 
   const filterCategories = [
     "All",
-    "Software-development",
+    "Machine-learning",
     "Data-science",
     "NLP",
-    "Machine-learning",
+    "Software-development",
   ];
 
   const filterProjects = (category: string) => {
@@ -70,21 +70,21 @@ const ProjectMenu: React.FC = () => {
     <div className="flex flex-col w-full" style={{ backgroundColor: "var(--bg-main)", color: "var(--text-main)" }}>
       <div className="flex flex-col md:flex-row w-full gap-8" style={{ backgroundColor: "var(--bg-main)" }}>
         <div
-          className="flex-1 rounded-lg p-3 sm:p-4 md:p-5"
+          className="flex-1 rounded-2xl p-5 sm:p-7 md:p-8"
           style={{
             backgroundColor: "var(--bg-card)",
             boxShadow: "var(--shadow)",
           }}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Work</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-5 sm:mb-6 tracking-tight">My Work</h2>
           
           {/* Category Filter Buttons */}
-          <div className="flex gap-2 sm:gap-3 md:gap-4 mb-3 sm:mb-4 flex-wrap">
+          <div className="flex gap-2 sm:gap-3 mb-4 flex-wrap">
             {filterCategories.map((category, index) => (
               <button
                 key={index}
                 onClick={() => filterProjects(category)}
-                className="px-2 py-1 sm:px-3 sm:py-2 md:p-2 rounded text-white transition-colors text-xs sm:text-sm md:text-base"
+                className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-white transition-colors text-xs sm:text-sm font-medium"
                 style={{
                   backgroundColor:
                     selectedCategory === category
@@ -110,10 +110,10 @@ const ProjectMenu: React.FC = () => {
           {/* Search Input */}
           <input
             type="text"
-            placeholder="Search projects..."
+            placeholder="Search by title, technology…"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full p-2 sm:p-3 md:p-2 border rounded mb-3 sm:mb-4 text-sm sm:text-base"
+            className="w-full px-4 py-2.5 border rounded-xl mb-5 text-sm sm:text-base"
             style={{
               backgroundColor: "var(--bg-main)",
               color: "var(--text-main)",
@@ -122,10 +122,10 @@ const ProjectMenu: React.FC = () => {
           />
           
           {/* Projects Grid */}
-          <div className="max-h-96 sm:max-h-128 md:max-h-160 overflow-y-auto scrollable">
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 sm:gap-4">
+          <div className="max-h-[60vh] overflow-y-auto overflow-x-hidden scrollable">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 items-stretch">
               {filteredProjects.map((project, index) => (
-                <li key={index}>
+                <li key={index} className="flex">
                   <ProjectCard
                     {...project}
                     className="project-card"
@@ -155,7 +155,7 @@ const ProjectMenu: React.FC = () => {
             }}
           />
           <div
-            className="p-4 sm:p-6 rounded-lg w-full max-w-sm sm:max-w-2xl md:max-w-3xl max-h-[95vh] sm:max-h-[90vh] flex flex-col overflow-hidden transition-colors"
+            className="p-5 sm:p-8 rounded-2xl w-full max-w-lg sm:max-w-2xl md:max-w-4xl max-h-[95vh] sm:max-h-[90vh] flex flex-col overflow-hidden transition-colors"
             style={{
               backgroundColor: "var(--bg-card)",
               color: "var(--text-main)",
@@ -163,25 +163,25 @@ const ProjectMenu: React.FC = () => {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">{selectedProject.titleProjet}</h2>
-            <p style={{ color: "var(--text-sub)" }} className="text-sm sm:text-base mb-3">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-1 sm:mb-2">{selectedProject.titleProjet}</h2>
+            <p style={{ color: "var(--text-sub)" }} className="text-sm sm:text-base mb-4 leading-relaxed">
               {selectedProject.resultRecap}
             </p>
 
             <div className="overflow-y-auto flex-1 max-h-[65vh] sm:max-h-[60vh] p-1 sm:p-2">
-              <h3 className="mt-2 sm:mt-3 font-bold text-base sm:text-lg">Skills Gained:</h3>
-              <ul className="list-disc pl-4 sm:pl-5 mb-3 sm:mb-4" style={{ color: "var(--text-sub)" }}>
+              <h3 className="mt-3 sm:mt-4 font-bold text-base sm:text-lg mb-2">Skills Gained</h3>
+              <ul className="list-disc pl-5 mb-4 space-y-1" style={{ color: "var(--text-sub)" }}>
                 {selectedProject.skills.map((skill, index) => (
                   <li key={index} className="text-sm sm:text-base">{skill}</li>
                 ))}
               </ul>
               
-              <h3 className="mt-2 sm:mt-3 font-bold text-base sm:text-lg">Technologies Used:</h3>
-              <div className="flex flex-wrap mt-2 gap-1 sm:gap-2">
+              <h3 className="mt-3 sm:mt-4 font-bold text-base sm:text-lg mb-2">Technologies Used</h3>
+              <div className="flex flex-wrap gap-2">
                 {selectedProject.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="px-2 py-1 sm:px-3 sm:py-1 rounded-md text-xs sm:text-sm"
+                    className="px-3 py-1 rounded-full text-xs sm:text-sm font-medium"
                     style={{
                       backgroundColor: "var(--btn-bg)",
                       color: "white",
@@ -198,15 +198,16 @@ const ProjectMenu: React.FC = () => {
                 </div>
               )}
               
-              <div className="flex flex-col sm:flex-row justify-between gap-3 sm:gap-0 mt-4 sm:mt-3">
+              <div className="flex flex-wrap gap-4 mt-5">
                 {selectedProject.githubLink && (
                   <a
                     href={selectedProject.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-center sm:text-left py-2 sm:py-0"
+                    className="flex items-center gap-1.5 text-sm font-medium hover:underline"
                     style={{ color: "var(--btn-bg)" }}
                   >
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                     GitHub
                   </a>
                 )}
@@ -215,10 +216,11 @@ const ProjectMenu: React.FC = () => {
                     href={selectedProject.tryMeLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-center sm:text-right py-2 sm:py-0"
+                    className="flex items-center gap-1.5 text-sm font-medium hover:underline"
                     style={{ color: "var(--btn-bg)" }}
                   >
-                    Try me!
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    Try it live
                   </a>
                 )}
               </div>
@@ -226,11 +228,10 @@ const ProjectMenu: React.FC = () => {
             
             <button
               onClick={() => setSelectedProject(null)}
-              className="mt-3 sm:mt-4 px-4 py-2 rounded-lg text-base sm:text-lg transition-colors w-full sm:w-auto self-end"
-              style={{
-                backgroundColor: "#ef4444",
-                color: "white",
-              }}
+              className="mt-4 sm:mt-6 px-5 py-2.5 rounded-lg text-base sm:text-lg font-semibold transition-colors w-full sm:w-auto self-end"
+              style={{ backgroundColor: "#ef4444", color: "white" }}
+              onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#dc2626"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "#ef4444"; }}
             >
               Close
             </button>
