@@ -85,20 +85,6 @@ const LanguagesPage: React.FC = () => {
                         </p>
                     </li>
 
-
-                    {/* Japanese */}
-                    <li
-                        className="flex flex-col items-center justify-center rounded-md p-6 text-center shadow-sm"
-                        style={{
-                            backgroundColor: 'var(--bg-main)',
-                            border: '1px solid var(--text-sub)',
-                        }}
-                    >
-                        <img className="w-40 h-25 mb-4 border-2" src="/assets/CountryPictures/japan.jpg" alt="Japan" />
-                        <h3 className="text-xl font-semibold">N5</h3>
-                        <p style={{ color: 'var(--text-sub)' }} className="text-sm">Elementary working proficiency</p>
-                    </li>
-
                     {/* Spanish */}
                     <li
                         className="flex flex-col items-center justify-center rounded-md p-6 text-center shadow-sm"
@@ -108,9 +94,23 @@ const LanguagesPage: React.FC = () => {
                         }}
                     >
                         <img className="w-40 h-25 mb-4" src="/assets/CountryPictures/spain.png" alt="Spain" />
-                        <h3 className="text-xl font-semibold">A2</h3>
+                        <h3 className="text-xl font-semibold">B1</h3>
                         <p style={{ color: 'var(--text-sub)' }} className="text-sm">Elementary working proficiency</p>
                     </li>
+                    {/* Japanese */}
+                    <li
+                        className="flex flex-col items-center justify-center rounded-md p-6 text-center shadow-sm"
+                        style={{
+                            backgroundColor: 'var(--bg-main)',
+                            border: '1px solid var(--text-sub)',
+                        }}
+                    >
+                        <img className="w-40 h-25 mb-4 border-2" src="/assets/CountryPictures/japan.jpg" alt="Japan" />
+                        <h3 className="text-xl font-semibold">A2 · JLPT N4</h3>
+                        <p style={{ color: 'var(--text-sub)' }} className="text-sm">Elementary working proficiency</p>
+                    </li>
+
+                    
                 </ul>
             </div>
         </div>

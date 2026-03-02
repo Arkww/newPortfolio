@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider, useTheme } from './components/ThemeContext';
 import Presentation from './components/Presentation';
 import TrackPage from './pages/TrackPage';
@@ -71,7 +70,6 @@ const AppContent = () => {
   };
 
   return (
-    <Router>
       <div className="flex flex-col">
         <nav
           className={`fixed top-0 left-0 right-0 p-4 border-b z-50 transition-all duration-300 ease-in-out ${
@@ -120,7 +118,6 @@ const AppContent = () => {
         </div>
         <Footer onScrollTo={scrollTo} />
       </div>
-    </Router>
   );
 };
 

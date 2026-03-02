@@ -76,7 +76,7 @@ const ProjectMenu: React.FC = () => {
             boxShadow: "var(--shadow)",
           }}
         >
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-5 sm:mb-6 tracking-tight">My Work</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-5 sm:mb-6 tracking-tight">Personal Projets</h2>
           
           {/* Category Filter Buttons */}
           <div className="flex gap-2 sm:gap-3 mb-4 flex-wrap">

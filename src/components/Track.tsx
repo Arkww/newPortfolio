@@ -76,8 +76,8 @@ const AcademicTrack: React.FC = () => {
                             />
 
                             {[
-                                { id: 'senat', logo: '/assets/Logos/senatLogo.jpg', title: 'Senate of France', role: 'Apprenticeship · AI Engineer', period: 'Sep 2025 – Jul 2026', location: 'Paris, France' },
-                                { id: 'university-tokyo', logo: '/assets/Logos/UniversityOfTokyo.png', title: 'University of Tokyo', role: 'Research Internship', period: 'Apr 2025 – Jul 2025', location: 'Tokyo, Japan' },
+                                { id: 'senat', logo: '/assets/Logos/senatLogo.jpg', title: 'French Senate', role: 'Apprenticeship · AI Engineer', period: 'Sep 2025 – Jul 2026', location: 'Paris, France' },
+                                { id: 'university-tokyo', logo: '/assets/Logos/UniversityOfTokyo.png', title: 'University of Tokyo', role: 'Internship · Research assistant', period: 'Apr 2025 – Jul 2025', location: 'Tokyo, Japan' },
                                 { id: 'assopena-president', logo: '/assets/Logos/LogoBDE.png', title: 'Student Association', role: 'President', period: '2024 – 2025', location: 'Bordeaux, France' },
                                 { id: 'iut-bordeaux', logo: '/assets/Logos/IUT.png', title: 'University of Bordeaux', role: 'B.Sc. Computer Science, International Track', period: '2023 – 2026', location: 'Bordeaux, France' },
                             ].map((entry) => (
@@ -90,7 +90,7 @@ const AcademicTrack: React.FC = () => {
 
                                     {/* Card */}
                                     <div
-                                        className="flex items-center gap-6 p-5 sm:p-6 rounded-xl cursor-pointer transition-all duration-200 hover:shadow-lg group"
+                                        className="flex items-center gap-3 sm:gap-6 p-4 sm:p-6 rounded-xl cursor-pointer transition-all duration-200 hover:shadow-lg group"
                                         style={{
                                             backgroundColor: 'var(--object)',
                                             border: '1px solid transparent',
@@ -101,22 +101,22 @@ const AcademicTrack: React.FC = () => {
                                     >
                                         {/* Logo */}
                                         <div
-                                            className="flex-shrink-0 w-28 h-28 rounded-xl overflow-hidden flex items-center justify-center"
+                                            className="flex-shrink-0 w-14 h-14 sm:w-28 sm:h-28 rounded-xl overflow-hidden flex items-center justify-center"
                                             style={{ backgroundColor: 'var(--bg-card)' }}
                                         >
-                                            <img src={entry.logo} alt={entry.title} className="w-24 h-24 object-contain" />
+                                            <img src={entry.logo} alt={entry.title} className="w-12 h-12 sm:w-24 sm:h-24 object-contain" />
                                         </div>
 
                                         {/* Text */}
                                         <div className="flex-1 min-w-0">
-                                            <p className="font-semibold text-lg sm:text-xl truncate" style={{ color: 'var(--text-main)' }}>
+                                            <p className="font-semibold text-base sm:text-xl leading-snug" style={{ color: 'var(--text-main)' }}>
                                                 {entry.title}
                                             </p>
-                                            <p className="text-base sm:text-lg truncate" style={{ color: '#4562D9' }}>
+                                            <p className="text-sm sm:text-lg leading-snug" style={{ color: '#4562D9' }}>
                                                 {entry.role}
                                             </p>
-                                            <p className="text-sm sm:text-base mt-1" style={{ color: 'var(--text-sub)' }}>
-                                                {entry.period} · {entry.location}
+                                            <p className="text-xs sm:text-base mt-1 leading-snug" style={{ color: 'var(--text-sub)' }}>
+                                                {entry.period}<br className="sm:hidden" /><span className="hidden sm:inline"> · </span>{entry.location}
                                             </p>
                                         </div>
 

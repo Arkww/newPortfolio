@@ -19,7 +19,7 @@ const Bio: React.FC = () => {
             }}
         >
             <img
-                src="/assets/MePhotos/PhotoMoi2.jpg"
+                src="/assets/MePhotos/PhotoMoi.jpg"
                 alt="Mathieu Jay"
                 className="w-full h-56 sm:h-72 md:h-80 lg:h-80 object-cover"
             />

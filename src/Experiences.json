@@ -2,11 +2,11 @@
   "academicExperiences": [
     {
       "id": "senat",
-      "title": "The Senate of France",
+      "title": "French Senate",
       "description": "Apprenticeship : AI Engineer",
       "period": "September 2025 - July 2026",
       "location": "Paris - France",
-      "fullDescription": "Worked for a year in the Senate, collaborating with members of the Senate IT department's development team to help them implement artificial intelligence solutions in their existing applications.\n\nMy role is to analyze the Senate IT department's current software, come up with ideas for implementing AI in this software, propose them to my superiors and, if they are accepted, design and implement them from A to Z independently and within the restrictions imposed by data sensitivity (100% local architecture).\n\nImplementation of an OCR model and local LLM to automatically process Senators' invoices (price and date extraction, expense classification). Design and production of an MCP architecture connected to a RAG to assist with searches within the Senate's intranet wiki.",
+      "fullDescription": "Worked for a year in the Senate, the second most impotant organ of the French political system. Collaborating with members of the Senate IT department's development team to help them implement artificial intelligence solutions in their existing applications.\n\nMy role is to analyze the Senate IT department's current software, come up with ideas for implementing AI in this software, propose them to my superiors and, if they are accepted, design and implement them from A to Z independently and within the restrictions imposed by data sensitivity (100% local architecture).\n\nImplementation of an OCR model and local LLM to automatically process Senators' invoices (price and date extraction, expense classification). Design and production of an MCP architecture connected to a RAG to assist with searches within the Senate's intranet wiki.",
       "skillsGained": [
 
         "Computer vision",
@@ -19,7 +19,7 @@
       "reference": "",
       "photos": [
         {
-          "src": "../../assets/TrackPhotos/Senat.jpg",
+          "src": "../../assets/TrackPhotos/senat.jpg",
           "description": "Having the opportunity to work in the prestigious Senate of France, one of the oldest institutions in the country and a symbol of the French Republic."
         },
         {
