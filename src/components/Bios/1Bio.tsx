@@ -48,7 +48,7 @@ const Bio: React.FC = () => {
                                 </a>
                             ))}
                         </div>
-                        <a href="/assets/CVEN.pdf" download className="flex items-center justify-center sm:justify-start">
+                        <a href="/assets/MATHIEU_JAY_RESUME.pdf" download className="flex items-center justify-center sm:justify-start">
                             <button
                                 className="flex items-center justify-center cursor-pointer rounded-full px-4 py-2 sm:px-5 sm:py-2.5 font-bold transition duration-300 ease-in-out text-sm sm:text-base w-full sm:w-auto"
                                 style={{
