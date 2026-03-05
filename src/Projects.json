@@ -45,29 +45,6 @@
     ],
     "githubLink": "https://github.com/Arkww/FromScratchMINST/"
   },
-  {
-    "titleProjet": "Sentiment analysis of Amazon reviews",
-    "littleTitleProjet": "Using a model from NLTK and a model from Hugging face to code sentiment analysis on a dataset of 50 0000 Amazon reviews and compared results",
-    "resultRecap": "For this project after cleaning and preparing the data I first implemented a basic sentiment analysis model from the NTLK library. I saw that it wasn't really efficient so I went on hugging face and found a model that looked fitting, I implemented it and it the result were way more satisfying.",
-    "categorie": ["Data-science", "NLP"],
-    "skills": [
-      "Analysing the sentiment of reviews in a dataset of 50 000 reviews",
-      "Compared the results of two different models",
-      "Analyzed the Positive 1-Star and Negative 5-Star Reviews to see why did the model failed sometimes"
-    ],
-    "technologies": ["Python", "NLTK", "Hugging Face", "Pandas"],
-    "photoProjet": [
-      {
-        "src": "/assets/ProjectsPhotos/SentimentAnalysis1.png",
-        "desc": "The comparaison of the results of the two models, the roberta model from hugging face is way more accurate"
-      },
-      {
-        "src": "/assets/ProjectsPhotos/SentimentAnalysis2.png",
-        "desc": "The result of the vader model from NLTK, a lot of mistakes are visible"
-      }
-    ],
-    "githubLink": "https://github.com/Arkww/AmazonReviewsSentimentAnalysis"
-  },
   
   {
     "titleProjet": "Chinese Numbers Recognition",
@@ -91,6 +68,53 @@
       }
     ],
     "githubLink": "https://github.com/Arkww/ChineseNumbersRecognition"
+  },
+
+  {                                                                                                                                                                                                                                           
+      "titleProjet": "Elliptic Curve Cryptography",                                                                                                                                                                                           
+      "littleTitleProjet": "From-scratch implementation of elliptic curve arithmetic, ECDH key exchange, AES encryption, and a full Bitcoin simulation including address generation, ECDSA transaction signing, and verification on secp256k1.",                                              
+      "resultRecap": "The goal of this project was to understand and implement the mathematical foundations of Elliptic Curve Cryptography (ECC) from scratch in Python. Starting from point addition and scalar multiplication on curves over both real numbers and finite fields, we built up to real-world cryptographic protocols. The Bitcoin module implements the secp256k1 curve with its known parameters, generates valid Bitcoin addresses through the full pipeline (private) key → public key → SHA-256 → RIPEMD-160 → Base58Check encoding), and signs fictitious transactions using ECDSA. A benchmark comparing RSA (3072 bits) vs ECDH (256 bits) at equivalent 128-bit security demonstrates ECC's superior performance with shorter keys. I was responsible for the elliptic curve arithmetic, the Bitcoin address generation, and the ECDSA signing implementation.",
+      "categorie": ["Cryptography", "Mathematics"],
+      "skills": [
+        "Implementing elliptic curve point addition and scalar multiplication over finite fields",
+        "Building the secp256k1 curve and generating valid Bitcoin addresses with Base58Check encoding",
+        "ECDSA digital signature generation and verification for Bitcoin transactions",
+        "Benchmarking ECC vs RSA performance at equivalent security levels"
+      ],
+      "technologies": ["Python", "secp256k1", "ECDSA", "AES-256-GCM", "ECDH"],
+      "photoProjet": [{
+          "src": "/assets/ProjectsPhotos/ECC1.png",
+          "desc": "Elliptic curve point addition and scalar multiplication visualized on a curve over real numbers"
+        },
+        {
+          "src": "/assets/ProjectsPhotos/ECC2.png",
+          "desc": "RSA vs ECDH benchmark showing ECC's faster key generation, encryption, and decryption with smaller keys"
+        }],
+      "githubLink": "https://github.com/Arkww/Elliptic-Curve-Cryptography"
+  },
+
+  {
+    "titleProjet": "Sentiment analysis of Amazon reviews",
+    "littleTitleProjet": "Using a model from NLTK and a model from Hugging face to code sentiment analysis on a dataset of 50 0000 Amazon reviews and compared results",
+    "resultRecap": "For this project after cleaning and preparing the data I first implemented a basic sentiment analysis model from the NTLK library. I saw that it wasn't really efficient so I went on hugging face and found a model that looked fitting, I implemented it and it the result were way more satisfying.",
+    "categorie": ["Data-science", "NLP"],
+    "skills": [
+      "Analysing the sentiment of reviews in a dataset of 50 000 reviews",
+      "Compared the results of two different models",
+      "Analyzed the Positive 1-Star and Negative 5-Star Reviews to see why did the model failed sometimes"
+    ],
+    "technologies": ["Python", "NLTK", "Hugging Face", "Pandas"],
+    "photoProjet": [
+      {
+        "src": "/assets/ProjectsPhotos/SentimentAnalysis1.png",
+        "desc": "The comparaison of the results of the two models, the roberta model from hugging face is way more accurate"
+      },
+      {
+        "src": "/assets/ProjectsPhotos/SentimentAnalysis2.png",
+        "desc": "The result of the vader model from NLTK, a lot of mistakes are visible"
+      }
+    ],
+    "githubLink": "https://github.com/Arkww/AmazonReviewsSentimentAnalysis"
   },
   {
     "titleProjet": "Study of Chinese articles",
